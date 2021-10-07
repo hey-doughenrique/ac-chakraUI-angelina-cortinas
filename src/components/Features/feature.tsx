@@ -29,7 +29,7 @@ export function Feature() {
                         Formulário de orçamento
                     </ListItem>
                 </UnorderedList>
-                <Button>
+                <Button variant="solid">
                     Iniciar atendimento
                 </Button>
             </Box>

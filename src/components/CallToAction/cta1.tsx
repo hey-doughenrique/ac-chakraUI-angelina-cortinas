@@ -16,29 +16,28 @@ export function CallToActionONE() {
             h={'380px'}
             backgroundImage="url('./images/bg-ctaONE.png')"
             backgroundSize={'cover'}
-            backgroundPosition={'center center'}>
+            backgroundPosition={'center center'}
+            py={["20", "0"]}>
             <VStack
                 w={'full'}
                 justify={'center'}
                 px={useBreakpointValue({ base: 4, md: 8 })}
             >
-                <Stack maxW={1280}>
+                <Stack maxW={["100%", "1280px"]} textAlign={["center", "left"]}>
                     <Heading
                         color={'white'}>
-                        Experimente o nosso atendimento online, sem compromisso
+                        Agilize o seu dia
                     </Heading>
                     <Text
                         color={'white'}>
                         Tem alguma projeto em mente? Inicie o seu atendimento e vamos discutir sobre o seu projeto.
                     </Text>
 
-                    <Stack direction={'row'}>
-                        <Button
-                            bg="primary.500" pl="20" pr="20" pt="8" pb="8" color="white" fontFamily="DM Sans" fontWeight="light">
+                    <Stack direction={['column', 'row']}>
+                        <Button variant="solid">
                             Iniciar atendimento
                         </Button>
-                        <Button
-                            bg="primary.500" pl="20" pr="20" pt="8" pb="8" color="white" fontFamily="DM Sans" fontWeight="light">
+                        <Button variant="outline">
                             Converse conosco
                         </Button>
                     </Stack>

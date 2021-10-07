@@ -1,4 +1,5 @@
 import { extendTheme } from '@chakra-ui/react'
+import { ButtonStyles as Button } from './theme/buttonStyles'
 
 import Typography from './theme/typography'
 
@@ -10,7 +11,8 @@ export const theme = extendTheme({
         black: "#000",
         white: "#fff",
         primary: {
-            "500": "#F32266"
+            "500": "#F32266",
+            "600": "#D50B4F"
         },
         secondary: {
             "100": "#F7F6F3"
@@ -59,5 +61,9 @@ export const theme = extendTheme({
                 color: 'neutral.900',
             },
         }
+    },
+
+    components: {
+        Button,
     }
 })

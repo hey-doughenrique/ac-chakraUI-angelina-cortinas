@@ -9,6 +9,7 @@ import { BrandsGrid } from '../components/LogoGrid/brandgrid'
 import { CallToActionONE } from '../components/CallToAction/cta1'
 import { Feature3 } from '../components/Features/feature3'
 import { Testimonials } from '../components/Testimonials/testimonials'
+import { Footer } from '../components/Footer'
 
 
 export default function MyApp({ Component, pageProps }: AppProps) {
@@ -96,6 +97,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <Feature2 />
       <BrandsGrid />
       <CallToActionONE />
+      <Footer />
     </>
   )
 }
