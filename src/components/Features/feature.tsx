@@ -10,7 +10,7 @@ export function Feature() {
             <Image mx="auto" src="/images/feature-image.svg" alt="Atendimento Online da Angelina Cortinas" />
             <Box>
                 <Heading>
-                    1Experimente o nosso atendimento online, sem compromisso
+                    Experimente o nosso atendimento online, sem compromisso
                 </Heading>
                 <Text>
                     Você escolhe como quer ser atendido:
