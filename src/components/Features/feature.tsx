@@ -3,19 +3,20 @@ import { Flex, HStack, Box, Heading, Text, Button, Image, UnorderedList, ListIte
 import {
     CheckIcon
 } from '@chakra-ui/icons';
+import { ModalButton } from "../ModalDialog/modal";
 
 export function Feature() {
     return (
-        <Flex align="center" mx="auto" flexDirection={["column", "row"]} maxW={1280}>
+        <Flex align="center" mx="auto" py="20" flexDirection={["column", "row"]} maxW={["86vw", "1280px"]}>
             <Image mx="auto" src="/images/feature-image.svg" alt="Atendimento Online da Angelina Cortinas" />
             <Box>
                 <Heading>
                     Experimente o nosso atendimento online, sem compromisso
                 </Heading>
-                <Text>
+                <Text mt="4">
                     Você escolhe como quer ser atendido:
                 </Text>
-                <UnorderedList styleType="none" spacing={3} fontFamily="DM Sans">
+                <UnorderedList styleType="none" spacing={3} fontFamily="DM Sans" my="10">
                     <ListItem>
                         <ListIcon as={CheckIcon} color="green.500" />
                         Chamada por vídeo
@@ -29,9 +30,7 @@ export function Feature() {
                         Formulário de orçamento
                     </ListItem>
                 </UnorderedList>
-                <Button variant="solid">
-                    Iniciar atendimento
-                </Button>
+                <ModalButton buttonText="Iniciar Atendimento" variantType="solid" />
             </Box>
         </Flex>
     )
