@@ -4,11 +4,11 @@ export function Feature3() {
     return (
         <Box background="secondary.100">
             <Box>
-                <Container display="flex" mx="auto" py="20" flexDirection={["column", "row"]} maxW={1080}>
+                <Container display="flex" mx="auto" py="20" flexDirection={["column", "row"]} maxW={["86vw", "1080px"]}>
                     <Heading as="h2">
                         São 51 anos de expertise compartilhados com você
                     </Heading>
-                    <Text>
+                    <Text mt="4">
                         Em 1960 ajudamos a criar a indústria têxtil no ramo da decoração no Brasil. Em 1970 fundamos a Angelina Cortinas e passamos a atuar como uma Grife de Cortinas.
                     </Text>
                 </Container>

@@ -36,13 +36,8 @@ export function CallToActionONE() {
                     </Text>
 
                     <Stack direction={['column', 'row']}>
-                        <ModalButton />
-                        <Button variant="solid">
-                            Iniciar atendimento
-                        </Button>
-                        <Button variant="outline">
-                            Converse conosco
-                        </Button>
+                        <ModalButton variantType="solid" buttonText="Iniciar Atendimento" />
+
                     </Stack>
                 </Stack>
             </VStack>

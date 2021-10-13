@@ -32,7 +32,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
       >
         <Box
-          w={["100vw", "80vw"]}
+          w={["100vw", "100vw"]}
           maxWidth={["100vw", "1280px"]}
           h="745"
           backgroundImage="url('./images/bg-hero.png')"

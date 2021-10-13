@@ -2,7 +2,7 @@ import { Flex, Box, Heading, Text, Image } from "@chakra-ui/react"
 
 export function Feature2() {
     return (
-        <Flex align="center" mx="auto" flexDirection={["column", "row"]} maxW={1280}>
+        <Flex align="center" mx="auto" py="20" flexDirection={["column", "row"]} maxW={["86vw", "1280px"]}>
 
             <Box>
                 <Heading>

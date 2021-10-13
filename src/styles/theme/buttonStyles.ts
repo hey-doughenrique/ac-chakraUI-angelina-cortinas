@@ -33,7 +33,8 @@ export const ButtonStyles = {
 
         outline: {
             bg: "transparent",
-            color: "white",
+            color: "primary.500",
+            borderColor: "primary.500",
             _hover: {
                 color: "primary.500"
             },

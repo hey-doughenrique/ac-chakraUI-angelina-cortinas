@@ -12,11 +12,11 @@ import {
 } from "@chakra-ui/react"
 
 
-export function ModalButton() {
+export function ModalButton({ buttonText, variantType }) {
     const { isOpen, onOpen, onClose } = useDisclosure()
     return (
         <>
-            <Button variant="solid" onClick={onOpen}>Iniciar Atendimento</Button>
+            <Button variant={variantType} onClick={onOpen}>{buttonText}</Button>
 
             <Modal isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay />
