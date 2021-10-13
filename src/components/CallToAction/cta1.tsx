@@ -15,30 +15,30 @@ export function CallToActionONE() {
         <Flex
             align="center" mx="auto" flexDirection={["column", "row"]}
             w={'100vw'}
-            h={'380px'}
+            h={'480px'}
             backgroundImage="url('./images/bg-ctaONE.png')"
             backgroundSize={'cover'}
             backgroundPosition={'center center'}
             py={["20", "0"]}>
             <VStack
-                w={'full'}
-                justify={'center'}
+                mx="auto"
+                maxW={["86vw", "1280px"]}
                 px={useBreakpointValue({ base: 4, md: 8 })}
             >
-                <Stack maxW={["100%", "1280px"]} textAlign={["center", "left"]}>
+                <Stack maxW={["100%", "380px"]} textAlign={["center", "center"]}>
                     <Heading
                         color={'white'}>
                         Agilize o seu dia
                     </Heading>
                     <Text
-                        color={'white'}>
+                        color={'white'}
+                        pb="4">
                         Tem alguma projeto em mente? Inicie o seu atendimento e vamos discutir sobre o seu projeto.
                     </Text>
 
-                    <Stack direction={['column', 'row']}>
-                        <ModalButton variantType="solid" buttonText="Iniciar Atendimento" />
+                    <ModalButton displayType="flex" variantType="solid" buttonText="Iniciar Atendimento" />
 
-                    </Stack>
+
                 </Stack>
             </VStack>
         </Flex>
