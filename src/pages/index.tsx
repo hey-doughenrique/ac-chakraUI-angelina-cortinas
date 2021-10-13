@@ -9,12 +9,19 @@ import { BrandsGrid } from '../components/LogoGrid/brandgrid'
 import { CallToActionONE } from '../components/CallToAction/cta1'
 import { Feature3 } from '../components/Features/feature3'
 import { Testimonials } from '../components/Testimonials/testimonials'
+import { ModalButton } from '../components/ModalDialog/modal'
 import { Footer } from '../components/Footer'
+import { MainForm } from '../components/Forms'
+
+
+const getValue = () => {
+
+}
 
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  return (
 
+  return (
     <>
       <WithSubnavigation />
       <Flex
@@ -40,54 +47,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         >
           <Heading as="h1" color="white" size="3xl" fontWeight="medium" maxW={860}>Ajudamos você a encontrar a cortina ou persiana ideal</Heading>
           <Text fontSize="lgpdesktop" maxW={["80%", "480px"]} fontWeight="light" mt="4">Tem algum projeto em mente?  Inicie o seu atendimento e vamos discutir juntos sobre a sua proposta.</Text>
-          <Flex
-            as="form"
-            flexDirection={["column", "row"]}
-            w="100%"
-            maxWidth={["100%", "980px"]}
-            bg="white"
-            mt="8"
-            p="8"
-            borderRadius={8}
-            color="neutral.500"
-
-          >
-            <FormControl id="email">
-              <FormLabel>Nome</FormLabel>
-              <Input
-                placeholder="Digite seu nome"
-                name="name"
-                type="text"
-                variant="flushed"
-                fontFamily="DM Sans"
-                fontSize="large"
-              />
-
-            </FormControl>
-            <FormControl id="email">
-              <FormLabel>Seu melhor email</FormLabel>
-              <Input
-                placeholder="exemplo@email.com.br"
-                name="email"
-                type="mail"
-                variant="flushed"
-                fontFamily="DM Sans"
-                fontSize="large"
-              />
-            </FormControl>
-            <FormControl id="email">
-              <FormLabel>Telefone</FormLabel>
-              <Input
-                placeholder="(11) 9 9900-9000"
-                name="phone"
-                type="phone"
-                variant="flushed"
-                fontFamily="DM Sans"
-                fontSize="large"
-              />
-            </FormControl>
-            <Button type="submit" bg="primary.500" pl="20" pr="20" pt="8" pb="8" color="white" fontFamily="DM Sans" fontWeight="light">Iniciar Atendimento</Button>
-          </Flex>
+          <MainForm />
         </Box>
       </Flex>
       <LogoGrid />

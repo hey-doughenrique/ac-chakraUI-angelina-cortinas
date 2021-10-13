@@ -8,6 +8,8 @@ import {
     Heading,
 } from '@chakra-ui/react';
 
+import { ModalButton } from '../ModalDialog/modal'
+
 export function CallToActionONE() {
     return (
         <Flex
@@ -34,6 +36,7 @@ export function CallToActionONE() {
                     </Text>
 
                     <Stack direction={['column', 'row']}>
+                        <ModalButton />
                         <Button variant="solid">
                             Iniciar atendimento
                         </Button>
