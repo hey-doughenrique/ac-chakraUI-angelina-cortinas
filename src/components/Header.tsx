@@ -54,9 +54,7 @@ export function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <Image src="/images/logo.png" alt="Logo Angelina Cortinas" boxSize="150px" objectFit="contain">
-
-          </Image>
+          <Image src="/images/logo.png" alt="Logo Angelina Cortinas" boxSize="150px" objectFit="contain" />
 
           <Flex display={{ base: 'none', md: 'flex' }} align="center" ml={10}>
             <DesktopNav />
@@ -68,8 +66,8 @@ export function WithSubnavigation() {
           justify={'flex-end'}
           direction={'row'}
           spacing={6}>
-          <ModalButton variantType="outline" buttonText="Converse Conosco" />
-          <ModalButton variantType="solid" buttonText="Solicitar Orçamento" />
+          <ModalButton displayType={{ base: 'none', md: 'inline-flex' }} variantType="outline" buttonText="Converse Conosco" />
+          <ModalButton displayType="inline-flex" variantType="solid" buttonText="Solicitar Orçamento" />
         </Stack>
       </Flex>
 

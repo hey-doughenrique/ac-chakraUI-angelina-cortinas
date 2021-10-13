@@ -30,7 +30,7 @@ export function Feature() {
                         Formulário de orçamento
                     </ListItem>
                 </UnorderedList>
-                <ModalButton buttonText="Iniciar Atendimento" variantType="solid" />
+                <ModalButton displayType="inline-flex" buttonText="Iniciar Atendimento" variantType="solid" />
             </Box>
         </Flex>
     )

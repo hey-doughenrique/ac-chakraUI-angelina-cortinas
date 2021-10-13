@@ -1,4 +1,4 @@
-import { Box, Container, SimpleGrid, Stack, Text, IconButton, Input, Button } from "@chakra-ui/react"
+import { Box, Container, SimpleGrid, Stack, Text, IconButton, Input, Button, Image } from "@chakra-ui/react"
 
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
 
@@ -13,9 +13,7 @@ export function Footer() {
 
                     <Stack spacing={6}>
                         <Box>
-                            <Text>
-                                LOGO
-                            </Text>
+                            <Image src="/images/logo.png" alt="Logo Angelina Cortinas" boxSize="150px" objectFit="contain" />
                         </Box>
                         <Text fontSize={'sm'}>
                             Somos uma herança de gerações apaixonadas por cortinas e persianas sob medidas.
@@ -34,19 +32,19 @@ export function Footer() {
                     </Stack>
 
                     <Stack align={'flex-start'}>
-                        <Text>Atendimento</Text>
+                        <Text fontFamily="DM Sans">Atendimento</Text>
                         <Text>Segunda à Sexta das 9h às 18h.</Text>
                         <Text>Sábados das 9h às 14h.</Text>
                     </Stack>
 
                     <Stack align={'flex-start'}>
-                        <Text>Contato</Text>
+                        <Text fontFamily="DM Sans">Contato</Text>
                         <Text>contato@angelinacortinas.com.br</Text>
                         <Text>R. Padre Chico, 362 - Perdizes, São Paulo</Text>
                     </Stack>
 
                     <Stack align={'flex-start'}>
-                        <Text>Stay up to date</Text>
+                        <Text fontFamily="DM Sans">Increva-se em nossa newsletter</Text>
                         <Stack direction={'row'}>
                             <Input
                                 placeholder={'Your email address'}

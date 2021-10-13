@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 export function MainForm() {
     const submit = e => {
         e.preventDefault()
-        fetch(`https://hooks.zapier.com/hooks/catch/8297333/btlja79/`, {
+        fetch(`https://hooks.zapier.com/hooks/catch/3660927/bte5w7a/`, {
             method: 'POST',
             body: JSON.stringify({ name, mail, phone }),
         }).catch(() => alert("There was an error, please try again"))
