@@ -1,11 +1,10 @@
 import {
     Stack,
     Flex,
-    Button,
     Text,
     VStack,
-    useBreakpointValue,
-    Heading,
+    Box,
+    useBreakpointValue
 } from '@chakra-ui/react';
 
 import { ModalButton } from '../ModalDialog/modal'
@@ -25,19 +24,17 @@ export function CallToActionONE() {
                 maxW={["86vw", "1280px"]}
                 px={useBreakpointValue({ base: 4, md: 8 })}
             >
-                <Stack maxW={["100%", "380px"]} textAlign={["center", "center"]}>
-                    <Heading
-                        color={'white'}>
+                <Stack maxW={["100%", "580px"]} textAlign={["center", "center"]}>
+                    <Text as="h2" color="white">
                         Agilize o seu dia
-                    </Heading>
-                    <Text
-                        color={'white'}
-                        pb="4">
+                    </Text>
+                    <Text size="b_large" color="white">
                         Tem alguma projeto em mente? Inicie o seu atendimento e vamos discutir sobre o seu projeto.
                     </Text>
 
-                    <ModalButton displayType="flex" variantType="solid" buttonText="Iniciar Atendimento" />
-
+                    <Flex maxW={380}>
+                        <ModalButton displayType="flex" variantType="solid" buttonText="Iniciar Atendimento" />
+                    </Flex>
 
                 </Stack>
             </VStack>

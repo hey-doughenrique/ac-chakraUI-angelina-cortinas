@@ -1,11 +1,11 @@
-import { Flex, Stack, Box, Heading, Image } from "@chakra-ui/react"
+import { Flex, Stack, Box, Text, Image } from "@chakra-ui/react"
 
 export function LogoGrid() {
     return (
         <Flex justify="center" py="20" px={["5", "20"]} mt={["60", "0"]}>
             <Stack direction={["column", "row"]} spacing="64px">
                 <Box>
-                    <Heading as="h2">Quem já confiou em nós</Heading>
+                    <Text as="h2">Quem já confiou em nós</Text>
                 </Box>
                 <Box>
                     <Image mx="auto" src="/images/reserva-logo.png" alt="Reserva Logo" />

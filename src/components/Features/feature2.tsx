@@ -1,13 +1,13 @@
-import { Flex, Box, Heading, Text, Image } from "@chakra-ui/react"
+import { Flex, Box, Text, Image } from "@chakra-ui/react"
 
 export function Feature2() {
     return (
         <Flex align="center" mx="auto" py="20" flexDirection={["column", "row"]} maxW={["86vw", "1280px"]}>
 
             <Box>
-                <Heading>
+                <Text as="h2">
                     Se preferir, venha até nosso showroom ou vamos até você
-                </Heading>
+                </Text>
                 <Text>
                     No nosso showroom, você poderá sentir a textura dos tecidos e combinar estilos de acessórios antes de comprar.
                 </Text>
@@ -17,6 +17,6 @@ export function Feature2() {
             </Box>
 
             <Image mx="auto" src="/images/feature-2-image.svg" alt="Atendimento Online da Angelina Cortinas" />
-        </Flex>
+        </Flex >
     )
 }

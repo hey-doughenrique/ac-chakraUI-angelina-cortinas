@@ -14,10 +14,6 @@ import { Footer } from '../components/Footer'
 import { MainForm } from '../components/Forms'
 
 
-const getValue = () => {
-
-}
-
 
 export default function MyApp({ Component, pageProps }: AppProps) {
 
@@ -45,8 +41,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           pt="40"
 
         >
-          <Heading as="h1" color="white" size="3xl" fontWeight="medium" maxW={860}>Ajudamos você a encontrar a cortina ou persiana ideal</Heading>
-          <Text fontSize="lgpdesktop" maxW={["80%", "480px"]} fontWeight="light" mt="4">Tem algum projeto em mente?  Inicie o seu atendimento e vamos discutir juntos sobre a sua proposta.</Text>
+          <Text as="h1" size="display3" color="white" maxW={860}>Ajudamos você a encontrar a cortina ou persiana ideal</Text>
+          <Text size="b_large" color="white" maxW={["80%", "480px"]} mt="4">Tem algum projeto em mente?  Inicie o seu atendimento e vamos discutir juntos sobre a sua proposta.</Text>
           <MainForm />
         </Box>
       </Flex>

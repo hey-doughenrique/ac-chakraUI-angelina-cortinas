@@ -1,4 +1,4 @@
-import { Flex, Container, Box, Heading, Text, Image } from "@chakra-ui/react"
+import { Flex, Box, Text, Image } from "@chakra-ui/react"
 
 export function Testimonials() {
     return (
@@ -11,14 +11,8 @@ export function Testimonials() {
                     alt="Foto de cliente da Angelina Cortinas"
                 />
                 <Box ml={4}>
-                    <Text
-                        color="neutral.900"
-                        fontWeight={500}
-                        fontFamily="DM Sans"
-                        letterSpacing="tight">
-                        Samuel Santos
-                    </Text>
-                    <Text letterSpacing="tight">
+                    <Text as="h4">Samuel Santos</Text>
+                    <Text size="b_small">
                         “Excelente! Desde o atendimento até o início da negociação. Recebi muitas sugestões, desde cores a valores. Entrega no prazo fornecido.
                     </Text>
                 </Box>
@@ -31,14 +25,8 @@ export function Testimonials() {
                     alt="Foto de cliente da Angelina Cortinas"
                 />
                 <Box ml={4}>
-                    <Text
-                        color="neutral.900"
-                        fontWeight={500}
-                        fontFamily="DM Sans"
-                        letterSpacing="tight">
-                        Marcelo Schwartz
-                    </Text>
-                    <Text letterSpacing="tight">
+                    <Text as="h4">Marcelo Schwartz</Text>
+                    <Text size="b_small">
                         “Fiquei impressionado com a atenção no atendimento e pontualidade na entrega e instalação. Muito satisfeito. Estão de parabéns.
                     </Text>
                 </Box>
@@ -51,14 +39,8 @@ export function Testimonials() {
                     alt="Foto de cliente da Angelina Cortinas"
                 />
                 <Box ml={4}>
-                    <Text
-                        color="neutral.900"
-                        fontWeight={500}
-                        fontFamily="DM Sans"
-                        letterSpacing="tight">
-                        Nathalia Guedes
-                    </Text>
-                    <Text letterSpacing="tight">
+                    <Text as="h4">Nathalia Guedes</Text>
+                    <Text size="b_small">
                         Ótimo atendimento, entrega no prazo, pessoas simpáticas e trabalho bem feito. Ficamos super contentes e repetiriamos a escolha. Parabéns :)
                     </Text>
                 </Box>

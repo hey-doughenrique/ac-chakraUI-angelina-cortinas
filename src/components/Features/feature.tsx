@@ -1,4 +1,4 @@
-import { Flex, HStack, Box, Heading, Text, Button, Image, UnorderedList, ListItem, ListIcon } from "@chakra-ui/react"
+import { Flex, Box, Text, Image, UnorderedList, ListItem, ListIcon } from "@chakra-ui/react"
 
 import {
     CheckIcon
@@ -10,9 +10,9 @@ export function Feature() {
         <Flex align="center" mx="auto" py="20" flexDirection={["column", "row"]} maxW={["86vw", "1280px"]}>
             <Image mx="auto" src="/images/feature-image.svg" alt="Atendimento Online da Angelina Cortinas" />
             <Box>
-                <Heading>
+                <Text as="h2">
                     Experimente o nosso atendimento online, sem compromisso
-                </Heading>
+                </Text>
                 <Text mt="4">
                     Você escolhe como quer ser atendido:
                 </Text>

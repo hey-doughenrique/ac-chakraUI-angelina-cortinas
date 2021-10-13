@@ -1,7 +1,10 @@
 import { extendTheme } from '@chakra-ui/react'
 import { ButtonStyles as Button } from './theme/buttonStyles'
 
-import Typography from './theme/typography'
+import { TypographyStyles as Text } from './theme/typographyStyles'
+
+
+
 
 
 
@@ -31,39 +34,54 @@ export const theme = extendTheme({
         heading: 'DM Sans, sans-serif',
     },
 
-    fontSizes: {
-        d1desktop: "7.5rem",
-        d2desktop: "5rem",
-        d3desktop: "4rem",
-        h1desktop: ["2rem", "3.5rem"],
-        lgpdesktop: "1.5rem",
-    },
-
-    textStyles: {
-        h1: {
-            // you can also use responsive styles
-            fontSize: ["32px", "56px"],
-            fontWeight: "500",
-            lineHeight: "100%",
-            letterSpacing: "-0.4px",
-        },
-    },
-
     styles: {
         global: {
             "html, body": {
                 bg: 'white',
-                color: 'neutral.500',
+                fontFamily: "Frank Ruhl Libre, serif",
                 overflowX: "hidden",
             },
 
             "h1, h2, h3, h4": {
                 color: 'neutral.900',
+                fontFamily: "DM Sans, sans-serif",
+                fontWeight: "500",
+                letterSpacing: "-0.025rem", //-0.4px
+                lineHeight: "100%",
             },
+
+
+            h1: {
+                fontSize: ["2rem", "3.5rem"], // 32px, 56px
+            },
+
+            h2: {
+                fontSize: ["1.5rem", "2.25rem"], // 24px, 36px
+            },
+
+            h3: {
+                fontSize: ["1.125rem", "1.5rem"], // 18px, 24px
+            },
+
+            h4: {
+                fontSize: ["0.875rem", "1.125rem"], // 14px, 18px
+            },
+
+            p: { // default b_medium
+                fontSize: ["1.125rem", "1.25rem"], // 18px, 20px
+                lineHeight: ["1.5rem", "1.625rem"], // 24px, 26px
+
+                color: 'neutral.900',
+                letterSpacing: "-0.025rem", //-0.4px
+                marginY: "1rem",
+
+            },
+
         }
     },
 
     components: {
         Button,
+        Text,
     }
 })
