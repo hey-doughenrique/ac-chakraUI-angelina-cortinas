@@ -11,40 +11,30 @@ export function Footer() {
                     templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }}
                     spacing={8}>
 
-                    <Stack spacing={6}>
+                    <Stack spacing={0}>
                         <Box>
                             <Image src="/images/logo.png" alt="Logo Angelina Cortinas" boxSize="150px" objectFit="contain" />
                         </Box>
-                        <Text fontSize={'sm'}>
+                        <Text size="b_small">
                             Somos uma herança de gerações apaixonadas por cortinas e persianas sob medidas.
                         </Text>
-                        <Stack direction={'row'} spacing={6}>
-                            <Button label={'Facebook'} href={'#'}>
-                                <FaFacebook />
-                            </Button>
-                            <Button label={'Facebook'} href={'#'}>
-                                <FaFacebook />
-                            </Button>
-                            <Button label={'Facebook'} href={'#'}>
-                                <FaFacebook />
-                            </Button>
-                        </Stack>
+
                     </Stack>
 
                     <Stack align={'flex-start'}>
-                        <Text fontFamily="DM Sans">Atendimento</Text>
-                        <Text>Segunda à Sexta das 9h às 18h.</Text>
-                        <Text>Sábados das 9h às 14h.</Text>
+                        <Text as="h4">Atendimento</Text>
+                        <Text size="b_small">Segunda à Sexta das 9h às 18h.</Text>
+                        <Text size="b_small">Sábados das 9h às 14h.</Text>
                     </Stack>
 
                     <Stack align={'flex-start'}>
-                        <Text fontFamily="DM Sans">Contato</Text>
-                        <Text>contato@angelinacortinas.com.br</Text>
-                        <Text>R. Padre Chico, 362 - Perdizes, São Paulo</Text>
+                        <Text as="h4">Contato</Text>
+                        <Text size="b_small">contato@angelinacortinas.com.br</Text>
+                        <Text size="b_small">R. Padre Chico, 362 - Perdizes, São Paulo</Text>
                     </Stack>
 
                     <Stack align={'flex-start'}>
-                        <Text fontFamily="DM Sans">Increva-se em nossa newsletter</Text>
+                        <Text as="h4">Increva-se em nossa newsletter</Text>
                         <Stack direction={'row'}>
                             <Input
                                 placeholder={'Your email address'}

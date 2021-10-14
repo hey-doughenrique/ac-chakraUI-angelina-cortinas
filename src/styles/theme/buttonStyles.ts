@@ -3,20 +3,24 @@ export const ButtonStyles = {
     baseStyle: {
         fontWeight: "light",
         borderRadius: "base",
-        fontFamily: "DM Sans",
+        fontFamily: 'DM Sans, sans-serif',
     },
     // Styles for the size variations xs , sm, md or lg
     sizes: {
         sm: {
-            fontSize: "sm",
-            px: 4,
-            py: 3,
+            fontSize: "12px",
+            px: 8,
+            py: 6,
+            minWidth: ["100%", "auto"],
+            borderRadius: "8px",
         },
 
         md: {
-            fontSize: "md",
+            fontSize: "14px",
             px: 10,
             py: 8,
+            minWidth: ["100%", "auto"],
+            borderRadius: "8px",
         },
 
     },

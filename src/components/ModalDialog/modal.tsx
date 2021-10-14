@@ -13,11 +13,11 @@ import {
 import { MainForm } from "../Forms"
 
 
-export function ModalButton({ buttonText, variantType, displayType }) {
+export function ModalButton({ buttonText, variantType, displayType, sizeType }) {
     const { isOpen, onOpen, onClose } = useDisclosure()
     return (
         <>
-            <Button variant={variantType} onClick={onOpen} display={displayType}>{buttonText}</Button>
+            <Button variant={variantType} display={displayType} size={sizeType} onClick={onOpen} >{buttonText}</Button>
 
             <Modal isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay />

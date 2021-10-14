@@ -7,7 +7,14 @@ import { ModalButton } from "../ModalDialog/modal";
 
 export function Feature() {
     return (
-        <Flex align="center" mx="auto" py="20" flexDirection={["column", "row"]} maxW={["86vw", "1280px"]}>
+        <Flex
+            flexDirection={["column", "row"]}
+            align="center"
+            px="4"
+            py={["16", "24"]}
+            mx="auto"
+            maxW={["100%", "1280px"]}
+        >
             <Image mx="auto" src="/images/feature-image.svg" alt="Atendimento Online da Angelina Cortinas" />
             <Box>
                 <Text as="h2">
@@ -30,7 +37,7 @@ export function Feature() {
                         Formulário de orçamento
                     </ListItem>
                 </UnorderedList>
-                <ModalButton displayType="inline-flex" buttonText="Iniciar Atendimento" variantType="solid" />
+                <ModalButton displayType="inline-flex" sizeType="md" buttonText="Iniciar Atendimento" variantType="solid" />
             </Box>
         </Flex>
     )

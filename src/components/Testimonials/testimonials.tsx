@@ -2,8 +2,16 @@ import { Flex, Box, Text, Image } from "@chakra-ui/react"
 
 export function Testimonials() {
     return (
-        <Flex align="flex-start" mx="auto" py={["5", "20"]} flexDirection={["column", "row"]} maxW={["80%", "1080"]}>
-            <Flex py={["10", "0"]}>
+        <Flex
+            justify="center"
+            flexDirection={["column", "row"]}
+            align="center"
+            px="4"
+            py={["16", "24"]}
+            mx="auto"
+            maxW={["100%", "1080px"]}
+        >
+            <Flex py={["2", "0"]}>
                 <Image
                     borderRadius="full"
                     boxSize="100px"
@@ -17,7 +25,7 @@ export function Testimonials() {
                     </Text>
                 </Box>
             </Flex>
-            <Flex py={["10", "0"]}>
+            <Flex py={["2", "0"]}>
                 <Image
                     borderRadius="full"
                     boxSize="100px"
@@ -31,7 +39,7 @@ export function Testimonials() {
                     </Text>
                 </Box>
             </Flex >
-            <Flex py={["10", "0"]}>
+            <Flex py={["2", "0"]}>
                 <Image
                     borderRadius="full"
                     boxSize="100px"

@@ -2,7 +2,14 @@ import { Flex, Stack, Box, Text, Image } from "@chakra-ui/react"
 
 export function LogoGrid() {
     return (
-        <Flex justify="center" py="20" px={["5", "20"]} mt={["60", "0"]}>
+        <Flex
+            justify="center"
+            flexDirection={["column", "row"]}
+            align="center"
+            px="4"
+            py={["16", "24"]}
+            mx="auto"
+            maxW={["100%", "1280px"]}>
             <Stack direction={["column", "row"]} spacing="64px">
                 <Box>
                     <Text as="h2">Quem já confiou em nós</Text>

@@ -21,16 +21,16 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <>
       <WithSubnavigation />
       <Flex
-        w="100vw"
-        mt={["0", "5"]}
+        flexDirection={["column", "row"]}
         align="center"
-        justify="center"
-
+        px="4"
+        mx="auto"
+        maxW={["100%", "1280px"]}
       >
         <Box
           w={["100vw", "100vw"]}
           maxWidth={["100vw", "1280px"]}
-          h="745"
+          h="745px"
           backgroundImage="url('./images/bg-hero.png')"
           flexDirection="column"
           align="left"
@@ -41,8 +41,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           pt="40"
 
         >
-          <Text as="h1" size="display3" color="white" maxW={860}>Ajudamos você a encontrar a cortina ou persiana ideal</Text>
-          <Text size="b_large" color="white" maxW={["80%", "480px"]} mt="4">Tem algum projeto em mente?  Inicie o seu atendimento e vamos discutir juntos sobre a sua proposta.</Text>
+          <Text as="h1" size="display3" color="white" maxW={["100%", "860px"]}>Ajudamos você a encontrar a cortina ou persiana ideal</Text>
+          <Text size="b_large" variant="normal" color="white" maxW={["100%", "620px"]} mt="4">Tem algum projeto em mente?  Inicie o seu atendimento e vamos discutir juntos sobre a sua proposta.</Text>
           <MainForm />
         </Box>
       </Flex>

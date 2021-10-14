@@ -2,7 +2,13 @@ import { Flex, Box, Text, Image } from "@chakra-ui/react"
 
 export function Feature2() {
     return (
-        <Flex align="center" mx="auto" py="20" flexDirection={["column", "row"]} maxW={["86vw", "1280px"]}>
+        <Flex
+            flexDirection={["column", "row"]}
+            align="center"
+            px="4"
+            py={["16", "24"]}
+            mx="auto"
+            maxW={["100%", "1280px"]}>
 
             <Box>
                 <Text as="h2">

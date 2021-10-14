@@ -77,7 +77,7 @@ export function MainForm() {
                     fontSize="large"
                 />
             </FormControl>
-            <Button type="submit" bg="primary.500" pl="20" pr="20" pt="8" pb="8" color="white" fontFamily="DM Sans" fontWeight="light">Iniciar Atendimento</Button>
+            <Button type="submit" size="md" variant="solid" mt={["5", "0"]} >Iniciar Atendimento</Button>
         </Flex>
 
     )
