@@ -10,7 +10,7 @@ import {
     Text,
     useDisclosure
 } from "@chakra-ui/react"
-import { MainForm } from "../Forms"
+import { ModalForm } from "../Forms/modalform"
 
 
 export function ModalButton({ buttonText, variantType, displayType, sizeType }) {
@@ -22,10 +22,10 @@ export function ModalButton({ buttonText, variantType, displayType, sizeType }) 
             <Modal isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay />
                 <ModalContent>
-                    <ModalHeader>Modal Title</ModalHeader>
+                    <ModalHeader as="h2">Preencha os Dados Abaixo</ModalHeader>
                     <ModalCloseButton />
                     <ModalBody>
-                        <MainForm />
+                        <ModalForm />
                     </ModalBody>
 
                     <ModalFooter>

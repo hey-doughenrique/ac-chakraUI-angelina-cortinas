@@ -11,7 +11,7 @@ import { Feature3 } from '../components/Features/feature3'
 import { Testimonials } from '../components/Testimonials/testimonials'
 import { ModalButton } from '../components/ModalDialog/modal'
 import { Footer } from '../components/Footer'
-import { MainForm } from '../components/Forms'
+import { MainForm } from '../components/Forms/footerhero'
 
 
 

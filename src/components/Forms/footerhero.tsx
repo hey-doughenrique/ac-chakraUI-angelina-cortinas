@@ -1,5 +1,4 @@
 import { Flex, FormControl, FormLabel, Input, Button } from "@chakra-ui/react"
-import { useForm } from "react-hook-form"
 
 import React, { useState } from 'react'
 
