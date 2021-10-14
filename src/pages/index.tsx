@@ -14,11 +14,14 @@ import { Testimonials } from '../components/Testimonials/testimonials'
 import { Footer } from '../components/Footer'
 import { HeroForm } from '../components/Forms/heroform'
 
+import Script from 'next/script'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <Script src="https://cdn.jsdelivr.net/gh/gkogan/sup-save-url-parameters/sup.min.js" />
+
       <WithSubnavigation />
 
       <Flex
