@@ -9,7 +9,9 @@ export default class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Frank+Ruhl+Libre&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Frank+Ruhl+Libre&display=swap" rel="stylesheet"
+          />
+          <meta name="theme-color" content="#152B47" />
         </Head>
         <body>
           <Main />
