@@ -1,6 +1,7 @@
 import { AppProps } from 'next/app'
+import Image from 'next/image'
 
-import { Stack, Box, Text } from "@chakra-ui/react"
+import { Stack, Text, Box } from "@chakra-ui/react"
 
 export default function MyApp({ Component, pageProps }: AppProps) {
     return (
@@ -27,6 +28,14 @@ export default function MyApp({ Component, pageProps }: AppProps) {
                     <Text size="b_small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
 
                 </Stack>
+
+                <Box>
+                    <Image
+                        src={'/images/feature-image.svg'}
+                        alt="Girl coding"
+                        layout="fill"
+                    />
+                </Box>
 
 
 
