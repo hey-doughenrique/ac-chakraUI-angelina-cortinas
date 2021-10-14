@@ -11,7 +11,7 @@ import { Feature3 } from '../components/Features/feature3'
 import { Testimonials } from '../components/Testimonials/testimonials'
 import { ModalButton } from '../components/ModalDialog/modal'
 import { Footer } from '../components/Footer'
-import { MainForm } from '../components/Forms/footerhero'
+import { HeroForm } from '../components/Forms/heroform'
 
 
 
@@ -43,7 +43,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         >
           <Text as="h1" size="display3" color="white" maxW={["100%", "860px"]}>Ajudamos você a encontrar a cortina ou persiana ideal</Text>
           <Text size="b_large" variant="normal" color="white" maxW={["100%", "620px"]} mt="4">Tem algum projeto em mente?  Inicie o seu atendimento e vamos discutir juntos sobre a sua proposta.</Text>
-          <MainForm />
+          <HeroForm />
         </Box>
       </Flex>
       <LogoGrid />

@@ -2,14 +2,18 @@ import { Flex, FormControl, FormLabel, Input, Button } from "@chakra-ui/react"
 
 import React, { useState } from 'react'
 
-export function MainForm() {
+export function HeroForm() {
     const submit = e => {
         e.preventDefault()
         fetch(`https://hooks.zapier.com/hooks/catch/3660927/bte5w7a/`, {
             method: 'POST',
             body: JSON.stringify({ name, mail, phone }),
-        }).catch(() => alert("There was an error, please try again"))
+        }).then(() => setIsSent(true)).catch(() => alert("There was an error, please try again"))
     }
+
+    const [isSent, setIsSent] = useState(false)
+
+
 
     const [name, setName] = useState('')
     const [mail, setMail] = useState('')
@@ -76,7 +80,7 @@ export function MainForm() {
                     fontSize="large"
                 />
             </FormControl>
-            <Button type="submit" size="md" variant="solid" mt={["5", "0"]} >Iniciar Atendimento</Button>
+            <Button type="submit" size="md" variant={isSent ? "successful" : "solid"} mt={["5", "0"]} >{isSent ? 'Atendimento solicitado!' : 'Iniciar Atendimento'}</Button>
         </Flex>
 
     )

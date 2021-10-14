@@ -44,6 +44,12 @@ export const ButtonStyles = {
             },
             boxShadow: "xl",
 
+        },
+
+        successful: {
+            bg: "green.500",
+            color: "white",
+            borderColor: "green.500",
         }
     },
     // The default `size` or `variant` values
