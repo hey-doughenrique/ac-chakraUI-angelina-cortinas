@@ -13,8 +13,6 @@ export function HeroForm() {
 
     const [isSent, setIsSent] = useState(false)
 
-
-
     const [name, setName] = useState('')
     const [mail, setMail] = useState('')
     const [phone, setPhone] = useState('')

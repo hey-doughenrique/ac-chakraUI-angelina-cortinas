@@ -15,7 +15,7 @@ export function Feature() {
             mx="auto"
             maxW={["100%", "1280px"]}
         >
-            <Image mx="auto" src="/images/feature-image.svg" alt="Atendimento Online da Angelina Cortinas" />
+            <Image mx="auto" src="/images/feature-image.jpg" alt="Atendimento Online da Angelina Cortinas" />
             <Box>
                 <Text as="h2">
                     Experimente o nosso atendimento online, sem compromisso
@@ -37,7 +37,7 @@ export function Feature() {
                         Formulário de orçamento
                     </ListItem>
                 </UnorderedList>
-                <ModalButton displayType="inline-flex" sizeType="md" buttonText="Iniciar Atendimento" variantType="solid" />
+                <ModalButton displayType="inline-flex" sizeType="md" buttonText="Solicite o seu Atendimento" variantType="solid" />
             </Box>
         </Flex>
     )

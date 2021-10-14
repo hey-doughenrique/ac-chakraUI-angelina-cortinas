@@ -8,8 +8,10 @@ export function ModalForm() {
         fetch(`https://hooks.zapier.com/hooks/catch/3660927/bte5w7a/`, {
             method: 'POST',
             body: JSON.stringify({ name, mail, phone }),
-        }).catch(() => alert("There was an error, please try again"))
+        }).then(() => setIsSent(true)).catch(() => alert("There was an error, please try again"))
     }
+
+    const [isSent, setIsSent] = useState(false)
 
     const [name, setName] = useState('')
     const [mail, setMail] = useState('')
@@ -76,7 +78,7 @@ export function ModalForm() {
                     fontSize="large"
                 />
             </FormControl>
-            <Button type="submit" size="md" variant="solid" mt={["5", "6"]} >Iniciar Atendimento</Button>
+            <Button type="submit" size="md" variant={isSent ? "successful" : "solid"} mt={["5", "10"]} >{isSent ? 'Atendimento solicitado!' : 'Iniciar Atendimento'}</Button>
         </Flex>
 
     )

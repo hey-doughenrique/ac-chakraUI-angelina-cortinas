@@ -40,13 +40,7 @@ export function CallToActionONE() {
                     </Text>
                 </Stack>
 
-                <ModalButton displayType="inline-flex" sizeType="md" buttonText="Iniciar Atendimento" variantType="solid" />
-
-
-
-
-
-
+                <ModalButton displayType="inline-flex" sizeType="md" buttonText="Iniciar agora" variantType="solid" />
 
             </VStack>
         </Flex >

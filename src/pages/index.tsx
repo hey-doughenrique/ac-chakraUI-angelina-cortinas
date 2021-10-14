@@ -1,6 +1,8 @@
 import { AppProps } from 'next/app'
 
-import { Flex, Box, Input, Button, FormControl, FormLabel, Heading, Text } from "@chakra-ui/react"
+import Image from 'next/image'
+
+import { Flex, Box, Text } from "@chakra-ui/react"
 import { WithSubnavigation } from '../components/Header'
 import { LogoGrid } from '../components/LogoGrid/logogrid'
 import { Feature } from '../components/Features/feature'
@@ -9,10 +11,8 @@ import { BrandsGrid } from '../components/LogoGrid/brandgrid'
 import { CallToActionONE } from '../components/CallToAction/cta1'
 import { Feature3 } from '../components/Features/feature3'
 import { Testimonials } from '../components/Testimonials/testimonials'
-import { ModalButton } from '../components/ModalDialog/modal'
 import { Footer } from '../components/Footer'
 import { HeroForm } from '../components/Forms/heroform'
-
 
 
 export default function MyApp({ Component, pageProps }: AppProps) {
@@ -20,6 +20,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <WithSubnavigation />
+
       <Flex
         flexDirection={["column", "row"]}
         align="center"
