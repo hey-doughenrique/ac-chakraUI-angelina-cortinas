@@ -7,7 +7,7 @@ export function HeroForm() {
         e.preventDefault()
         fetch(`https://hooks.zapier.com/hooks/catch/3660927/bte5w7a/`, {
             method: 'POST',
-            body: JSON.stringify({ name, mail, phone }),
+            body: JSON.stringify({ name, mail, phone, adgroupid, campaignid }),
         }).then(() => setIsSent(true)).catch(() => alert("There was an error, please try again"))
     }
 
@@ -16,6 +16,10 @@ export function HeroForm() {
     const [name, setName] = useState('')
     const [mail, setMail] = useState('')
     const [phone, setPhone] = useState('')
+
+
+    const [adgroupid, setAdgroupid] = useState('')
+    const [campaignid, setCampaignid] = useState('')
 
 
     return (
@@ -76,6 +80,24 @@ export function HeroForm() {
                     variant="flushed"
                     fontFamily="DM Sans"
                     fontSize="large"
+                />
+            </FormControl>
+            <FormControl display="none" id="adgroupid">
+                <Input
+                    name="adgroupid"
+                    type="hidden"
+
+                    value=" "
+                    onChange={e => setAdgroupid(e.target.value)}
+                />
+            </FormControl>
+            <FormControl display="none" id="campaignid">
+                <Input
+                    name="campaignid"
+                    type="hidden"
+
+                    value=" "
+                    onChange={e => setCampaignid(e.target.value)}
                 />
             </FormControl>
             <Button type="submit" size="md" variant={isSent ? "successful" : "solid"} mt={["5", "0"]} >{isSent ? 'Atendimento solicitado!' : 'Iniciar Atendimento'}</Button>
