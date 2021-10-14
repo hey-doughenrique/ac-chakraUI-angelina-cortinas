@@ -1,7 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-import Script from 'next/script'
-
 export default class MyDocument extends Document {
   render() {
     return (
@@ -31,7 +29,8 @@ export default class MyDocument extends Document {
             height="0" width="0" style="display:none;visibility:hidden"></iframe></iframe>`,
           }}
           />
-          <Script src="https://cdn.jsdelivr.net/gh/gkogan/sup-save-url-parameters/sup.min.js" />
+          <script src="https://cdn.jsdelivr.net/gh/gkogan/sup-save-url-parameters/sup.min.js">
+          </script>
           <Main />
           <NextScript />
         </body>
