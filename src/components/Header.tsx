@@ -54,7 +54,7 @@ export function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <Image src="/images/logo.png" alt="Logo Angelina Cortinas" boxSize="150px" objectFit="contain" />
+          <Text variant="medium">ANGELINA</Text>
 
           <Flex display={{ base: 'none', md: 'flex' }} align="center" ml={10}>
             <DesktopNav />
@@ -62,12 +62,12 @@ export function WithSubnavigation() {
         </Flex>
 
         <Stack
-          flex={{ base: 1, md: 0 }}
+          flex={{ base: 5, md: 0 }}
           justify={'flex-end'}
           direction={'row'}
           spacing={6}>
           <ModalButton displayType={{ base: 'none', md: 'inline-flex' }} variantType="outline" sizeType="sm" buttonText="Converse Conosco" />
-          <ModalButton displayType="inline-flex" variantType="solid" sizeType="sm" buttonText="Solicitar Orçamento" />
+          <ModalButton displayType={{ base: 'none', md: 'inline-flex' }} variantType="solid" sizeType="sm" buttonText="Solicitar Orçamento" />
         </Stack>
       </Flex>
 
@@ -163,7 +163,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 const MobileNav = () => {
   return (
     <Stack
-      bg={useColorModeValue('white', 'gray.800')}
+      bg={useColorModeValue('white', 'neutral.900')}
       p={4}
       display={{ md: 'none' }}>
       {NAV_ITEMS.map((navItem) => (

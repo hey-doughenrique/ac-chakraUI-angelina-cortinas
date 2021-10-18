@@ -40,8 +40,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           borderRadius={[0, 10]}
           color="white"
           px={["5", "20"]}
-          pt="40"
-
+          py="40"
         >
           <Text as="h1" size="display3" color="white" maxW={["100%", "860px"]}>Ajudamos você a encontrar a cortina ou persiana ideal</Text>
           <Text size="b_large" variant="normal" color="white" maxW={["100%", "620px"]} mt="4">Tem algum projeto em mente?  Inicie o seu atendimento e vamos discutir juntos sobre a sua proposta.</Text>

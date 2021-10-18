@@ -5,7 +5,22 @@ import React, { useState } from 'react'
 import Script from 'next/script'
 
 
+
+
+
+
 export function HeroForm() {
+
+    const [name, setName] = useState('')
+    const [mail, setMail] = useState('')
+    const [phone, setPhone] = useState('')
+
+
+    const [adgroupid, setAdgroupid] = useState('')
+    const [campaignid, setCampaignid] = useState('')
+
+    const [isSent, setIsSent] = useState(false)
+
     const submit = e => {
         e.preventDefault()
         fetch(`https://hooks.zapier.com/hooks/catch/3660927/bte5w7a/`, {
@@ -14,16 +29,6 @@ export function HeroForm() {
         }).then(() => setIsSent(true)).catch(() => alert("There was an error, please try again"))
     }
 
-
-    const [isSent, setIsSent] = useState(false)
-
-    const [name, setName] = useState('')
-    const [mail, setMail] = useState('')
-    const [phone, setPhone] = useState('')
-
-
-    const [adgroupid, setAdgroupid] = useState('0')
-    const [campaignid, setCampaignid] = useState('')
 
 
 
@@ -89,15 +94,15 @@ export function HeroForm() {
                         fontSize="large"
                     />
                 </FormControl>
-                <FormControl id="adgroupid">
+                <FormControl display="none" id="adgroupid">
                     <Input
                         name="adgroupid"
-                        type="text"
+                        type="hidden"
 
                         onChange={e => setAdgroupid(e.target.value)}
                     />
                 </FormControl>
-                <FormControl id="campaignid">
+                <FormControl display="" id="campaignid">
                     <Input
                         name="campaignid"
                         type="text"
@@ -105,7 +110,7 @@ export function HeroForm() {
                         onChange={e => setCampaignid(e.target.value)}
                     />
                 </FormControl>
-                <Button type="submit" size="md" variant={isSent ? "successful" : "solid"} mt={["5", "0"]} >{isSent ? 'Atendimento solicitado!' : 'Iniciar Atendimento'}</Button>
+                <Button id="submited" type="submit" size="md" variant={isSent ? "successful" : "solid"} mt={["6", "0"]} >{isSent ? 'Atendimento solicitado!' : 'Iniciar Atendimento'}</Button>
             </Flex>
         </>
     )

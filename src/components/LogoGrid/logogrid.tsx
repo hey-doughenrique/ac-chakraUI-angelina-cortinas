@@ -7,7 +7,7 @@ export function LogoGrid() {
             flexDirection={["column", "row"]}
             align="center"
             px="4"
-            py={["16", "24"]}
+            py={["24", "24"]}
             mx="auto"
             maxW={["100%", "1280px"]}>
             <Stack direction={["column", "row"]} spacing="64px">
