@@ -22,7 +22,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <>
 
       <Head>
-        <title>Angelina Cortinas</title>
+        <title>Angelina Cortinas ®</title>
         <meta name="description" content="Ajudamos você a encontrar a cortina ou persiana ideal. Solicite seu atendimento online." />
 
       </Head>
