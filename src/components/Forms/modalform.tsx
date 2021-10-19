@@ -3,20 +3,23 @@ import { Flex, FormControl, FormLabel, Input, Button } from "@chakra-ui/react"
 import React, { useState } from 'react'
 
 export function ModalForm() {
-    const submit = e => {
-        e.preventDefault()
-        fetch(`https://hooks.zapier.com/hooks/catch/3660927/bte5w7a/`, {
-            method: 'POST',
-            body: JSON.stringify({ name, mail, phone }),
-        }).then(() => setIsSent(true)).catch(() => alert("There was an error, please try again"))
-    }
-
-    const [isSent, setIsSent] = useState(false)
-
     const [name, setName] = useState('')
     const [mail, setMail] = useState('')
     const [phone, setPhone] = useState('')
 
+
+    const [adgroupid, setAdgroupid] = useState('')
+    const [campaignid, setCampaignid] = useState('')
+
+    const [isSent, setIsSent] = useState(false)
+
+    const submit = e => {
+        e.preventDefault()
+        fetch(`https://hooks.zapier.com/hooks/catch/3660927/bte5w7a/`, {
+            method: 'POST',
+            body: JSON.stringify({ name, mail, phone, adgroupid, campaignid }),
+        }).then(() => setIsSent(true)).catch(() => alert("There was an error, please try again"))
+    }
 
     return (
         <Flex
@@ -35,7 +38,7 @@ export function ModalForm() {
             color="neutral.500"
 
         >
-            <FormControl id="email">
+            <FormControl id="email" pb={["0", "2rem"]}>
                 <FormLabel>Nome</FormLabel>
                 <Input
                     name="name"
@@ -49,8 +52,8 @@ export function ModalForm() {
                     fontSize="large"
                 />
 
-            </FormControl>
-            <FormControl id="email">
+            </FormControl >
+            <FormControl id="email" pb={["0", "2rem"]}>
                 <FormLabel>Seu melhor email</FormLabel>
                 <Input
                     name="email"
@@ -68,7 +71,7 @@ export function ModalForm() {
                 <FormLabel>Telefone</FormLabel>
                 <Input
                     name="phone"
-                    type="phone"
+                    type="number"
                     placeholder="(11) 9 9900-9000"
                     label="Telefone"
                     onChange={e => setPhone(e.target.value)}
@@ -78,7 +81,7 @@ export function ModalForm() {
                     fontSize="large"
                 />
             </FormControl>
-            <Button type="submit" size="md" variant={isSent ? "successful" : "solid"} mt={["5", "10"]} >{isSent ? 'Atendimento solicitado!' : 'Iniciar Atendimento'}</Button>
+            <Button id="submited" type="submit" size="md" variant={isSent ? "successful" : "solid"} mt={["6", "8"]} mb={["0", "2rem"]}>{isSent ? 'Atendimento solicitado!' : 'Iniciar Atendimento'}</Button>
         </Flex>
 
     )

@@ -29,9 +29,6 @@ export function HeroForm() {
         }).then(() => setIsSent(true)).catch(() => alert("There was an error, please try again"))
     }
 
-
-
-
     return (
         <>
             <Script src="https://cdn.jsdelivr.net/gh/gkogan/sup-save-url-parameters/sup.min.js" />
@@ -102,7 +99,7 @@ export function HeroForm() {
                         onChange={e => setAdgroupid(e.target.value)}
                     />
                 </FormControl>
-                <FormControl display="" id="campaignid">
+                <FormControl display="none" id="campaignid">
                     <Input
                         name="campaignid"
                         type="text"
