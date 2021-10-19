@@ -7,14 +7,6 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="shortcut icon" href="/favicon.png" type="image/png" />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Frank+Ruhl+Libre&display=swap" rel="stylesheet"
-          />
-          <meta name="theme-color" content="#152B47" />
-
           <script dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -23,6 +15,14 @@ export default class MyDocument extends Document {
             })(window,document,'script','dataLayer','GTM-K7JQZHG');`,
           }}>
           </script>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Frank+Ruhl+Libre&display=swap" rel="stylesheet"
+          />
+          <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+          <meta name="theme-color" content="#152B47" />
+
 
         </Head>
         <body>
