@@ -1,5 +1,6 @@
 import { AppProps } from 'next/app'
 
+import Head from 'next/head';
 import Image from 'next/image'
 
 import { Flex, Box, Text } from "@chakra-ui/react"
@@ -19,6 +20,12 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+
+      <Head>
+        <title>Angelina Cortinas</title>
+        <meta name="description" content="Ajudamos você a encontrar a cortina ou persiana ideal. Solicite seu atendimento online." />
+
+      </Head>
 
       <WithSubnavigation />
 
