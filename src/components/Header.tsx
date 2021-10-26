@@ -54,7 +54,11 @@ export function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <Text variant="medium">ANGELINA</Text>
+          <Box w={200} pt={6}>
+            <Image
+              src="/images/logonew.svg" alt="Logo Angelinas Cortinas"
+            />
+          </Box>
 
           <Flex display={{ base: 'none', md: 'flex' }} align="center" ml={10}>
             <DesktopNav />

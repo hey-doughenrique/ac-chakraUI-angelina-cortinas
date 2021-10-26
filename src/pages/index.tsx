@@ -12,7 +12,7 @@ import { BrandsGrid } from '../components/LogoGrid/brandgrid'
 import { CallToActionONE } from '../components/CallToAction/cta1'
 import { Feature3 } from '../components/Features/feature3'
 import { Testimonials } from '../components/Testimonials/testimonials'
-import { Footer } from '../components/Footer'
+import { Footer2 } from '../components/Footer/Footer 2'
 import { HeroForm } from '../components/Forms/heroform'
 
 
@@ -61,7 +61,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <Feature2 />
       <BrandsGrid />
       <CallToActionONE />
-      <Footer />
+      <Footer2 />
     </>
   )
 }

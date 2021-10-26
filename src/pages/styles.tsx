@@ -2,6 +2,7 @@ import { AppProps } from 'next/app'
 import Image from 'next/image'
 
 import { Stack, Text, Box } from "@chakra-ui/react"
+import { Footer } from '../components/Footer/Footer 1'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
     return (
@@ -41,6 +42,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
 
             </Stack>
+
+            <Footer />
         </>
     )
 }
