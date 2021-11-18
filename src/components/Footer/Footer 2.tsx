@@ -5,13 +5,13 @@ import { IoCalendarClearOutline, IoTimeOutline, IoCarOutline, IoLocationOutline,
 
 export function Footer2() {
     return (
-        <Flex as="section" px="8px" background="white">
+        <Flex id="contato" as="section" px="8px" background="white">
             <Flex color="white" maxW={["auto", "1280px"]} minH={["auto", "320px"]} alignItems="center" mx="auto">
                 <Stack direction={["column", "row"]} justifyContent="space-around" spacing="50px" px="24px" alignItems="flex-start">
                     <Flex id="Logo and Text" direction="column" flex="1">
                         <Box w={200} pt={6}>
                             <Image
-                                src="/images/logonew.svg" alt="Logo Angelinas Cortinas"
+                                src="/images/logo.png" alt="Logo Angelinas Cortinas"
                             />
                         </Box>
 

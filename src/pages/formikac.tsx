@@ -11,6 +11,7 @@ import {
     FormHelperText,
     Input,
 } from "@chakra-ui/react"
+import { valueScaleCorrection } from 'framer-motion/types/render/dom/projection/scale-correction';
 
 export default function FormikExample() {
     function validateName(value) {
@@ -37,11 +38,14 @@ export default function FormikExample() {
         return error
     }
 
+
     return (
         <>
             <Script src="https://cdn.jsdelivr.net/gh/gkogan/sup-save-url-parameters/sup.min.js" />
             <Formik
-                initialValues={{ name: "Douglas" }}
+                initialValues={{
+                    name: "Douglas",
+                }}
                 onSubmit={(values, actions) => {
                     setTimeout(() => {
                         fetch(`https://hooks.zapier.com/hooks/catch/3660927/bdgfuap/`, {
@@ -91,7 +95,7 @@ export default function FormikExample() {
                             {({ field, form }) => (
                                 <FormControl isInvalid={form.errors.campaignid && form.touched.campaignid}>
                                     <FormLabel htmlFor="campaignid">Campaignid</FormLabel>
-                                    <Input {...field} name="campaignid" id="campaignid" />
+                                    <Input {...field} value="" name="campaignid" type="text" id="campaignid" />
                                     <FormErrorMessage>{form.errors.campaignid}</FormErrorMessage>
                                 </FormControl>
                             )}

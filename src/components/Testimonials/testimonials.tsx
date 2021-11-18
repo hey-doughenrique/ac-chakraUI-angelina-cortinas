@@ -2,7 +2,7 @@ import { Flex, Box, Text, Image } from "@chakra-ui/react"
 
 export function Testimonials() {
     return (
-        <Flex
+        <Flex id="depoimentos"
             justify="center"
             flexDirection={["column", "row"]}
             align="center"

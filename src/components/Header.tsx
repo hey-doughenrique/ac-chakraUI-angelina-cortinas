@@ -56,7 +56,7 @@ export function WithSubnavigation() {
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           <Box w={200} pt={6}>
             <Image
-              src="/images/logonew.svg" alt="Logo Angelinas Cortinas"
+              src="/images/logo.png" alt="Logo Angelinas Cortinas"
             />
           </Box>
 
@@ -237,40 +237,17 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: 'Início',
-    children: [
-      {
-        label: 'Explore Design Work',
-        subLabel: 'Trending Design to inspire you',
-        href: '#',
-      },
-      {
-        label: 'New & Noteworthy',
-        subLabel: 'Up-and-coming Designers',
-        href: '#',
-      },
-    ],
   },
   {
     label: 'Sobre Nós',
-    children: [
-      {
-        label: 'Job Board',
-        subLabel: 'Find your dream design job',
-        href: '#',
-      },
-      {
-        label: 'Freelance Projects',
-        subLabel: 'An exclusive list for contract work',
-        href: '#',
-      },
-    ],
+    href: "#sobre"
   },
   {
-    label: 'Produtos',
-    href: '#',
+    label: 'Depoimentos',
+    href: "#depoimentos"
   },
   {
     label: 'Contato',
-    href: '#',
+    href: '#contato',
   },
 ];
