@@ -36,20 +36,6 @@ export const theme = extendTheme({
 
     styles: {
         global: {
-            "html, body": {
-                bg: 'white',
-                fontFamily: "Frank Ruhl Libre, serif",
-                overflowX: "hidden",
-            },
-
-            "h1, h2, h3, h4": {
-                color: 'neutral.900',
-                fontFamily: "DM Sans, sans-serif",
-                fontWeight: "500",
-                letterSpacing: "-0.025rem", //-0.4px
-                lineHeight: "100%",
-            },
-
 
             h1: {
                 fontSize: ["2rem", "3.5rem"], // 32px, 56px
