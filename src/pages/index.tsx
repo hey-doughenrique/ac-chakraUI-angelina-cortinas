@@ -3,7 +3,7 @@ import { AppProps } from 'next/app'
 import Head from 'next/head';
 import Image from 'next/image'
 
-import { Flex, Box, Text } from "@chakra-ui/react"
+import { Flex, Box, Text, Badge, Stack } from "@chakra-ui/react"
 import { WithSubnavigation } from '../components/Header'
 import { LogoGrid } from '../components/LogoGrid/logogrid'
 import { Feature } from '../components/Features/feature'
@@ -49,9 +49,17 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           px={["5", "20"]}
           py="40"
         >
-          <Text as="h1" size="display3" color="white" maxW={["100%", "860px"]}>Ajudamos você a encontrar a cortina ou persiana ideal</Text>
+          <Stack direction="row"
+            align="center">
+            <Badge fontFamily="DM Sans" fontWeight="regular" color="green.800" bg="green.400" px="4" py="2" borderRadius="full">BlackFriday</Badge>
+            <Box fontFamily="DM Sans" fontWeight="regular" color="white">Até 26% OFF em compras presenciais*</Box>
+          </Stack>
+
+          <Text my={["2rem", "2rem"]} as="h1" size="display3" color="white" maxW={["100%", "860px"]}>Ajudamos você a encontrar a cortina ou persiana ideal</Text>
           <Text size="b_large" variant="normal" color="white" maxW={["100%", "620px"]} mt="4">Tem algum projeto em mente?  Inicie o seu atendimento e vamos discutir juntos sobre a sua proposta.</Text>
+          <Text size="b_small" color="white">* Oferta válida para entregas em Janeiro.</Text>
           <HeroForm />
+
         </Box>
       </Flex>
       <LogoGrid />

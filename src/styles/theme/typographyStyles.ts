@@ -14,7 +14,8 @@ export const TypographyStyles = {
         },
 
         display3: {
-            fontSize: ["2.25rem", "4rem"] // 36px, 64px
+            fontSize: ["2.25rem", "4rem"], // 36px, 64px
+            lineHeight: ["2.75rem", "4.5rem"], // 44px, 72px
         },
 
         b_large: {
