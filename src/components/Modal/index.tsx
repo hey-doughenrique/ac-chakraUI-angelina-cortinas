@@ -19,6 +19,7 @@ export default function BasicUsage() {
             <Modal isOpen={isOpen} onClose={onClose} size={"xl"}>
                 <ModalOverlay />
                 <ModalContent>
+                    <ModalCloseButton color="white" />
                     <Image src='./images/ac-modal.png' alt='Promoção Angelina Cortinas' />
                 </ModalContent>
             </Modal>
