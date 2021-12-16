@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 import { Flex, Box, Text, Badge, Stack } from "@chakra-ui/react"
 import { WithSubnavigation } from '../components/Header'
+import { Menu } from '../components/Header/index'
 import { LogoGrid } from '../components/LogoGrid/logogrid'
 import { Feature } from '../components/Features/feature'
 import { Feature2 } from '../components/Features/feature2'
@@ -28,7 +29,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
       </Head>
 
-      <WithSubnavigation />
+      <Menu />
 
       <BasicUsage />
 
@@ -38,6 +39,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         px="4"
         mx="auto"
         maxW={["100%", "1280px"]}
+        mt={32}
       >
         <Box
           w={["100vw", "100vw"]}
