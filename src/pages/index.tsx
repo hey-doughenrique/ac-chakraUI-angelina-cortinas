@@ -39,7 +39,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         px="4"
         mx="auto"
         maxW={["100%", "1280px"]}
-        mt={32}
+        mt={[0, 32]}
       >
         <Box
           w={["100vw", "100vw"]}
