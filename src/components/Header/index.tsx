@@ -28,9 +28,8 @@ export const Menu = () => {
                 borderRadius={['none', 'none', 'full', 'full']}
                 boxShadow={['none', 'none', 'xs', 'xs']}
                 zIndex={99}
-
-
             >
+
                 <Flex w={[140, 200]} >
                     <Image
                         src="/images/logo.png" alt="Logo Angelinas Cortinas"
@@ -94,8 +93,6 @@ export const Menu = () => {
                     </Stack>
                 </Flex>
 
-
-
                 <IconButton
                     aria-label="Open Menu"
                     size="lg"
@@ -141,7 +138,8 @@ export const Menu = () => {
                             variant="ghost"
                             aria-label="Início"
                             my={5}
-                            w="100%">
+                            w="100%"
+                            onClick={() => changeDisplay('none')}>
                             Início
                         </Button>
                     </Link>
@@ -152,7 +150,8 @@ export const Menu = () => {
                             variant="ghost"
                             aria-label="Sobre Nós"
                             my={5}
-                            w="100%">
+                            w="100%"
+                            onClick={() => changeDisplay('none')}>
                             Sobre Nós
                         </Button>
                     </Link>
@@ -163,7 +162,8 @@ export const Menu = () => {
                             variant="ghost"
                             aria-label="Depoimentos"
                             my={5}
-                            w="100%">
+                            w="100%"
+                            onClick={() => changeDisplay('none')}>
                             Depoimentos
                         </Button>
                     </Link>
@@ -174,7 +174,8 @@ export const Menu = () => {
                             variant="ghost"
                             aria-label="Contato"
                             my={5}
-                            w="100%">
+                            w="100%"
+                            onClick={() => changeDisplay('none')}>
                             Contato
                         </Button>
                     </Link>
