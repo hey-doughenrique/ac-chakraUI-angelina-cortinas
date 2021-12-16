@@ -1,7 +1,7 @@
 import { Flex, Button, IconButton, Image, Stack, Text } from '@chakra-ui/react'
 import { useState } from 'react'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
-import Link from 'next/Link'
+import Link from 'next/link'
 import { ModalButton } from '../ModalDialog/modal';
 
 
