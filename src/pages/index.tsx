@@ -31,7 +31,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
       <Menu />
 
-      <BasicUsage />
+      {/* Popup */}
+      {/* <BasicUsage /> */}
 
       <Flex
         flexDirection={["column", "row"]}
