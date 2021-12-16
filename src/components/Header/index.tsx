@@ -1,7 +1,7 @@
 import { Flex, Button, IconButton, Image, Stack, Text } from '@chakra-ui/react'
 import { useState } from 'react'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
-import NextLink from 'next/Link'
+import Link from 'next/Link'
 import { ModalButton } from '../ModalDialog/modal';
 
 
@@ -40,7 +40,7 @@ export const Menu = () => {
                 <Flex
                     display={['none', 'none', 'flex', 'flex']}
                     align="center">
-                    <NextLink href="/" passHref>
+                    <Link href="/" passHref>
                         <Button
                             as="a"
                             variant="ghost"
@@ -49,9 +49,9 @@ export const Menu = () => {
                             w="100%">
                             Início
                         </Button>
-                    </NextLink>
+                    </Link>
 
-                    <NextLink href="#sobre" passHref>
+                    <Link href="#sobre" passHref>
                         <Button
                             as="a"
                             variant="ghost"
@@ -60,9 +60,9 @@ export const Menu = () => {
                             w="100%">
                             Sobre Nós
                         </Button>
-                    </NextLink>
+                    </Link>
 
-                    <NextLink href="#depoimentos" passHref>
+                    <Link href="#depoimentos" passHref>
                         <Button
                             as="a"
                             variant="ghost"
@@ -71,9 +71,9 @@ export const Menu = () => {
                             w="100%">
                             Depoimentos
                         </Button>
-                    </NextLink>
+                    </Link>
 
-                    <NextLink href="#contato" passHref>
+                    <Link href="#contato" passHref>
                         <Button
                             as="a"
                             variant="ghost"
@@ -82,7 +82,7 @@ export const Menu = () => {
                             w="100%">
                             Contato
                         </Button>
-                    </NextLink>
+                    </Link>
 
                     <Stack
                         flex={{ base: 5, md: 0 }}
@@ -135,7 +135,7 @@ export const Menu = () => {
                     flexDir="column"
                     align="center"
                 >
-                    <NextLink href="/" passHref>
+                    <Link href="/" passHref>
                         <Button
                             as="a"
                             variant="ghost"
@@ -144,9 +144,9 @@ export const Menu = () => {
                             w="100%">
                             Início
                         </Button>
-                    </NextLink>
+                    </Link>
 
-                    <NextLink href="#sobre" passHref>
+                    <Link href="#sobre" passHref>
                         <Button
                             as="a"
                             variant="ghost"
@@ -155,9 +155,9 @@ export const Menu = () => {
                             w="100%">
                             Sobre Nós
                         </Button>
-                    </NextLink>
+                    </Link>
 
-                    <NextLink href="#depoimentos" passHref>
+                    <Link href="#depoimentos" passHref>
                         <Button
                             as="a"
                             variant="ghost"
@@ -166,9 +166,9 @@ export const Menu = () => {
                             w="100%">
                             Depoimentos
                         </Button>
-                    </NextLink>
+                    </Link>
 
-                    <NextLink href="#contato" passHref>
+                    <Link href="#contato" passHref>
                         <Button
                             as="a"
                             variant="ghost"
@@ -177,7 +177,7 @@ export const Menu = () => {
                             w="100%">
                             Contato
                         </Button>
-                    </NextLink>
+                    </Link>
 
                 </Flex>
             </Flex>
