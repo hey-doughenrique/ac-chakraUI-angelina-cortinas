@@ -62,7 +62,7 @@ export default function FormikExample() {
                         ), 3000,
                             // alert(JSON.stringify(values, null, 2))
                             // actions.setSubmitting(false),
-                            window.location.href = "https://bit.ly/32BJlNx"
+                            window.location.href = "https://bit.ly/3GkyZzH"
                         // window.open(
                         //     'https://bit.ly/32BJlNx',
                         //     '_blank'
