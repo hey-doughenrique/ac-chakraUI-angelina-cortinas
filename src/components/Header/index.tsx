@@ -88,8 +88,8 @@ export const Menu = () => {
                         justify={'flex-end'}
                         direction={'row'}
                         spacing={6}>
-                        <ModalButton displayType={{ base: 'none', md: 'inline-flex' }} variantType="outline" sizeType="sm" buttonText="Converse Conosco" />
-                        <ModalButton displayType={{ base: 'none', md: 'inline-flex' }} variantType="solid" sizeType="sm" buttonText="Solicitar Orçamento" />
+                        <ModalButton displayType={{ base: 'none', md: 'inline-flex' }} variantType="outline" buttonText="Converse Conosco" />
+                        <ModalButton displayType={{ base: 'none', md: 'inline-flex' }} variantType="solid" buttonText="Solicitar Orçamento" />
                     </Stack>
                 </Flex>
 

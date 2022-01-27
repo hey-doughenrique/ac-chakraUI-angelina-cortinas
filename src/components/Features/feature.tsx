@@ -18,26 +18,34 @@ export function Feature() {
             <Image mx="auto" src="/images/feature-image.jpg" alt="Atendimento Online da Angelina Cortinas" />
             <Box>
                 <Text as="h2">
-                    Experimente o nosso atendimento online, sem compromisso
+                    Precisando de ajuda? Experimente nosso atendimento online.
                 </Text>
-                <Text mt="4">
-                    Você escolhe como quer ser atendido:
+                <Text mt="4" >
+                    Agilize seu dia e converse com um de nossos consultores especializados
                 </Text>
                 <UnorderedList styleType="none" spacing={3} fontFamily="DM Sans" my="10">
                     <ListItem>
                         <ListIcon as={CheckIcon} color="green.500" />
-                        Chamada por vídeo
+                        Compartilhe sua ideia
                     </ListItem>
                     <ListItem>
                         <ListIcon as={CheckIcon} color="green.500" />
-                        Chat via Whatsapp
+                        Receba dicas e orientações técnicas
                     </ListItem>
                     <ListItem>
                         <ListIcon as={CheckIcon} color="green.500" />
-                        Formulário de orçamento
+                        Veja nosso mostruário de produtos
+                    </ListItem>
+                    <ListItem>
+                        <ListIcon as={CheckIcon} color="green.500" />
+                        Solicite visita para medição no local
+                    </ListItem>
+                    <ListItem>
+                        <ListIcon as={CheckIcon} color="green.500" />
+                        Receba orçamento personalizado
                     </ListItem>
                 </UnorderedList>
-                <ModalButton displayType="inline-flex" sizeType="md" buttonText="Solicite o seu Atendimento" variantType="solid" />
+                <ModalButton displayType="inline-flex" buttonText="Solicite o seu Atendimento" variantType="solid" />
             </Box>
         </Flex>
     )

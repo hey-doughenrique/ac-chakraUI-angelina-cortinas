@@ -38,7 +38,7 @@ export function WithSubnavigation() {
 
         align={'center'}
         maxW={1280}
-        mx="auto"
+        mx='auto'
       >
         <Flex
           flex={{ base: 1, md: 'auto' }}
@@ -55,12 +55,14 @@ export function WithSubnavigation() {
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           <Box w={200} pt={6}>
-            <Image
-              src="/images/logo.png" alt="Logo Angelinas Cortinas"
-            />
+            <Link href='/'>
+              <Image
+                src='/images/logo.png' alt='Logo Angelinas Cortinas'
+              />
+            </Link>
           </Box>
 
-          <Flex display={{ base: 'none', md: 'flex' }} align="center" ml={10}>
+          <Flex display={{ base: 'none', md: 'flex' }} align='center' ml={10}>
             <DesktopNav />
           </Flex>
         </Flex>
@@ -70,8 +72,8 @@ export function WithSubnavigation() {
           justify={'flex-end'}
           direction={'row'}
           spacing={6}>
-          <ModalButton displayType={{ base: 'none', md: 'inline-flex' }} variantType="outline" sizeType="sm" buttonText="Converse Conosco" />
-          <ModalButton displayType={{ base: 'none', md: 'inline-flex' }} variantType="solid" sizeType="sm" buttonText="Solicitar Orçamento" />
+          <ModalButton displayType={{ base: 'none', md: 'inline-flex' }} variantType='outline' buttonText='Converse Conosco' />
+          <ModalButton displayType={{ base: 'none', md: 'inline-flex' }} variantType='solid' buttonText='Solicitar Orçamento' />
         </Stack>
       </Flex>
 
@@ -98,7 +100,7 @@ const DesktopNav = () => {
                 href={navItem.href ?? '#'}
                 fontSize={'medium'}
                 fontWeight={500}
-                fontFamily="DM Sans"
+                fontFamily='DM Sans'
                 color={linkColor}
                 _hover={{
                   textDecoration: 'none',
@@ -240,11 +242,11 @@ const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: 'Sobre Nós',
-    href: "#sobre"
+    href: '#sobre'
   },
   {
     label: 'Depoimentos',
-    href: "#depoimentos"
+    href: '#depoimentos'
   },
   {
     label: 'Contato',

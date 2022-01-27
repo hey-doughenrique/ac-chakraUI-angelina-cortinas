@@ -4,6 +4,7 @@ import {
     Text,
     VStack,
     Box,
+    Button,
     useBreakpointValue
 } from '@chakra-ui/react';
 
@@ -35,12 +36,12 @@ export function CallToActionONE() {
                     <Text as="h2" color="white">
                         Agilize o seu dia
                     </Text>
-                    <Text size="b_large" color="white" pb={["4", "2"]}>
+                    <Text color="white" pb={["4", "2"]}>
                         Tem alguma projeto em mente? Inicie o seu atendimento e vamos discutir sobre o seu projeto.
                     </Text>
                 </Stack>
 
-                <ModalButton displayType="inline-flex" sizeType="md" buttonText="Iniciar agora" variantType="solid" />
+                <ModalButton displayType="inline-flex" buttonText="Iniciar agora" variantType="solid" />
 
             </VStack>
         </Flex >

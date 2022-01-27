@@ -1,12 +1,9 @@
-import { Flex, FormControl, FormLabel, Input, Button } from "@chakra-ui/react"
+import { Flex, FormControl, FormLabel, Input, Button, Box } from "@chakra-ui/react"
+import { BsWhatsapp } from 'react-icons/bs';
 
 import React, { useState } from 'react'
 
 import Script from 'next/script'
-
-
-
-
 
 
 export function HeroForm() {
@@ -27,6 +24,7 @@ export function HeroForm() {
             method: 'POST',
             body: JSON.stringify({ name, mail, phone, adgroupid, campaignid }),
         }).then(() => setIsSent(true)).catch(() => alert("There was an error, please try again"))
+        // window.location.href = "http://strides.digital"
     }
 
     return (
@@ -39,6 +37,7 @@ export function HeroForm() {
                 method="post"
                 onSubmit={submit}
 
+                alignItems='center'
                 flexDirection={["column", "row"]}
                 w="100%"
                 maxWidth={["100%", "980px"]}
@@ -59,7 +58,6 @@ export function HeroForm() {
                         onChange={e => setName(e.target.value)}
 
                         variant="flushed"
-                        fontFamily="DM Sans"
                         fontSize="large"
                     />
 
@@ -74,7 +72,6 @@ export function HeroForm() {
                         onChange={e => setMail(e.target.value)}
 
                         variant="flushed"
-                        fontFamily="DM Sans"
                         fontSize="large"
                     />
                 </FormControl>
@@ -88,7 +85,6 @@ export function HeroForm() {
                         onChange={e => setPhone(e.target.value)}
 
                         variant="flushed"
-                        fontFamily="DM Sans"
                         fontSize="large"
                     />
                 </FormControl>
@@ -108,7 +104,20 @@ export function HeroForm() {
                         onChange={e => setCampaignid(e.target.value)}
                     />
                 </FormControl>
-                <Button id="submited" type="submit" size="md" variant={isSent ? "successful" : "solid"} mt={["6", "0"]} >{isSent ? 'Atendimento solicitado!' : 'Iniciar Atendimento'}</Button>
+                <Button
+                    id="submited"
+                    type="submit"
+
+                    variant={isSent ? "successful" : "solid"}
+                    leftIcon={<BsWhatsapp />}
+
+                    mt={["6", "0"]}
+                    minW='auto'
+                    p='2rem'
+
+                >
+                    {isSent ? 'Atendimento solicitado!' : 'Atendimento via Whatsapp'}
+                </Button>
             </Flex>
         </>
     )
