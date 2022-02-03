@@ -1,0 +1,18 @@
+
+  .imageContainerNext {
+    width: 100%; 
+}
+
+.imageContainerNext > div {
+    position: unset !important;
+}
+
+
+.imageNext {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+    
+ 

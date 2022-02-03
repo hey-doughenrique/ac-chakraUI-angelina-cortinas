@@ -3,6 +3,7 @@ import { ChakraProvider } from "@chakra-ui/react"
 import { theme } from '../theme'
 
 import '../theme/external/formik.css';
+import '../theme/external/nextImage.css';
 
 import Head from 'next/head'
 
