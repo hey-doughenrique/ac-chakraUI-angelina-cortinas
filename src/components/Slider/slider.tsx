@@ -69,7 +69,7 @@ export default function Slider() {
 
                     <SwiperSlide>
                         <SliderItem
-                            image='/images/Ph-Wood-Amorim-34.jpg'
+                            image='/images/Ph-Wood-Amorim.jpg'
 
                         />
                     </SwiperSlide>
