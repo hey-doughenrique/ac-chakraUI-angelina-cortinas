@@ -91,7 +91,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <Feature3 />
       <Testimonials />
       <Flex as='section' flexDir='column'>
-        <Text as='h2' textAlign='center' pb={['10', '20']}>Inspire em nosso portfólio</Text>
+        <Text as='h2' textAlign='center' pb={['10', '20']}>Inspire-se em nosso portfólio</Text>
         <Slider />
       </Flex>
       <Feature />
