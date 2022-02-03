@@ -14,6 +14,7 @@ import { CallToActionONE } from '../components/CallToAction/cta1'
 import { Feature3 } from '../components/Features/feature3'
 import { Testimonials } from '../components/Testimonials/testimonials'
 import { Footer2 } from '../components/Footer/Footer 2'
+import Slider from '../components/Slider/slider'
 import { HeroForm } from '../components/Forms/heroform'
 import BasicUsage from '../components/Modal';
 import FormikExample from '../components/Forms/heroformik';
@@ -56,6 +57,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           px={['5', '20']}
           py='40'
         >
+
           {/* <Stack direction='row'
             align='center'>
             <Badge fontFamily='DM Sans' fontWeight='regular' color='green.800' bg='green.400' px='4' py='2' borderRadius='full'>BlackFriday</Badge>
@@ -88,6 +90,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <LogoGrid />
       <Feature3 />
       <Testimonials />
+      <Flex as='section' flexDir='column'>
+        <Text as='h2' textAlign='center' pb={['10', '20']}>Inspire em nosso portfólio</Text>
+        <Slider />
+      </Flex>
       <Feature />
       <Feature2 />
       <BrandsGrid />

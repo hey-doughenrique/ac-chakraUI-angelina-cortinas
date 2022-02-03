@@ -1,8 +1,9 @@
-import { Flex, Box, Text, Image, UnorderedList, ListItem, ListIcon } from "@chakra-ui/react"
+import { Flex, Box, Text, UnorderedList, ListItem, ListIcon } from "@chakra-ui/react"
 
 import {
     CheckIcon
 } from '@chakra-ui/icons';
+import Image from 'next/image'
 import { ModalButton } from "../ModalDialog/modal";
 
 export function Feature() {
@@ -11,11 +12,23 @@ export function Feature() {
             flexDirection={["column", "row"]}
             align="center"
             px="4"
-            py={["16", "24"]}
+            py={["16", "0"]}
             mx="auto"
             maxW={["100%", "1280px"]}
         >
-            <Image mx="auto" src="/images/feature-image.jpg" alt="Atendimento Online da Angelina Cortinas" />
+            <Box
+                maxW='1080px'
+                mx='auto'
+                pb='20'
+                as='div'
+                className='imageContainerNext'>
+                <Image
+                    className='imageNext'
+                    layout='fill'
+                    src='/images/atendimento-online.png'
+                    alt='Atendimento Online da Angelina Cortinas' />
+            </Box>
+
             <Box>
                 <Text as="h2">
                     Precisando de ajuda? Experimente nosso atendimento online.
