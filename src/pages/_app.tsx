@@ -1,11 +1,11 @@
-import { AppProps } from 'next/app'
-import { ChakraProvider } from "@chakra-ui/react"
-import { theme } from '../theme'
+import "../theme/external/formik.css";
+import "../theme/external/nextImage.css";
+import "../theme/external/whatsappWidget.css";
 
-import '../theme/external/formik.css';
-import '../theme/external/nextImage.css';
-
-import Head from 'next/head'
+import { AppProps } from "next/app";
+import { ChakraProvider } from "@chakra-ui/react";
+import Head from "next/head";
+import { theme } from "../theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -16,9 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <Component {...pageProps} />
     </ChakraProvider>
-
-  )
+  );
 }
 
-export default MyApp
-
+export default MyApp;
