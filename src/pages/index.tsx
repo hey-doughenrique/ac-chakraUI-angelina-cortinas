@@ -1,4 +1,4 @@
-import { Badge, Box, Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 
 import { AppProps } from "next/app";
 import BasicUsage from "../components/Modal";
@@ -12,12 +12,11 @@ import { Footer2 } from "../components/Footer/Footer 2";
 import FormikExample from "../components/Forms/heroformik";
 import Head from "next/head";
 import { HeroForm } from "../components/Forms/heroform";
-import Image from "next/image";
 import { LogoGrid } from "../components/LogoGrid/logogrid";
 import { Menu } from "../components/Header/index";
-import Slider from "../components/Slider/slider";
 import { Testimonials } from "../components/Testimonials/testimonials";
 import { WithSubnavigation } from "../components/Header";
+import Slider from "../components/Slider/slider";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
