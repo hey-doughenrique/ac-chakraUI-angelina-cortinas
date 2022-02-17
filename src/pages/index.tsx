@@ -61,7 +61,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           w={["100vw", "100vw"]}
           maxWidth={["100vw", "1280px"]}
           h="745px"
-          backgroundImage='url("./images/bg-hero.png")'
+          backgroundImage='url("./images/bg-hero-otimizado.jpg")'
           flexDirection="column"
           align="left"
           justify="center"
