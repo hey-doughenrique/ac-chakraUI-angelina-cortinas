@@ -10,8 +10,10 @@ export function Feature3() {
           display="flex"
           mx="auto"
           py="20"
+          pb={["8", "20"]}
           flexDirection={["column", "row"]}
-          maxW={["86vw", "1080px"]}
+          maxWidth={["100vw", "1080px"]}
+          px={["8", "20"]}
         >
           <Text as="h2">São 51 anos de expertise compartilhados com você</Text>
           <Text mt="4">

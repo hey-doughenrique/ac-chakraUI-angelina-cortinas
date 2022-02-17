@@ -16,12 +16,20 @@ export function Feature() {
     <Flex
       flexDirection={["column", "row"]}
       align="center"
-      px="4"
       py={["16", "0"]}
+      pb={["0", "0"]}
       mx="auto"
       maxW={["100%", "1280px"]}
+      px={["8", "4"]}
     >
-      <Box position="relative" w="full" flex="1">
+      <Box
+        position="relative"
+        w={["90%", "100%"]}
+        flex="1"
+        mr="10"
+        mt={["16", "0"]}
+        order={["2", "1"]}
+      >
         <Image
           width="100%"
           height="100%"
@@ -32,7 +40,7 @@ export function Feature() {
         />
       </Box>
 
-      <Box flex="1">
+      <Box flex="1" order={["1", "2"]}>
         <Text as="h2">
           Precisando de ajuda? Experimente nosso atendimento online.
         </Text>

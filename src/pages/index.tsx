@@ -14,9 +14,9 @@ import Head from "next/head";
 import { HeroForm } from "../components/Forms/heroform";
 import { LogoGrid } from "../components/LogoGrid/logogrid";
 import { Menu } from "../components/Header/index";
+import Slider from "../components/Slider/slider";
 import { Testimonials } from "../components/Testimonials/testimonials";
 import { WithSubnavigation } from "../components/Header";
-import Slider from "../components/Slider/slider";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -53,7 +53,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <Flex
         flexDirection={["column", "row"]}
         align="center"
-        px="4"
         mx="auto"
         maxW={["100%", "1280px"]}
         mt={[0, 32]}
