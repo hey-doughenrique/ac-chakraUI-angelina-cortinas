@@ -18,7 +18,7 @@ export function CallToActionONE() {
       minH={["40vh", "40vh"]}
       mx="auto"
       maxW="100vw"
-      backgroundImage="url('./images/bg-ctaONE.png')"
+      backgroundImage="url('./images/bg-ctaONE-otimizado.jpg')"
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
     >
