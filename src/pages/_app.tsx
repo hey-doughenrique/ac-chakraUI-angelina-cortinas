@@ -1,7 +1,8 @@
 import "../theme/external/formik.css";
 import "../theme/external/nextImage.css";
 import "../theme/external/whatsappWidget.css";
-import '../theme/external/swiperSlider.css'
+import "../theme/external/swiperSlider.css";
+import "../theme/external/order.css";
 
 import { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";

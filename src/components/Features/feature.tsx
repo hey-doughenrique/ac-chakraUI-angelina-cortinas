@@ -28,7 +28,7 @@ export function Feature() {
         flex="1"
         mr="10"
         mt={["16", "0"]}
-        order={["2", "1"]}
+        className="orderOne"
       >
         <Image
           width="100%"
@@ -40,7 +40,7 @@ export function Feature() {
         />
       </Box>
 
-      <Box flex="1" order={["1", "2"]}>
+      <Box flex="1" className="orderTwo">
         <Text as="h2">
           Precisando de ajuda? Experimente nosso atendimento online.
         </Text>

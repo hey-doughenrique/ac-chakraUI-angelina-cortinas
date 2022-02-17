@@ -1,0 +1,17 @@
+.orderOne {
+  order: 1;
+}
+
+.orderTwo {
+  order: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .orderOne {
+    order: 2;
+  }
+
+  .orderTwo {
+    order: 1;
+  }
+}
