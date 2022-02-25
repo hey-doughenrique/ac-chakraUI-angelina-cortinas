@@ -13,8 +13,11 @@ import { Field, Form, Formik, FormikHelpers } from "formik";
 
 import { BsWhatsapp } from "react-icons/bs";
 import Script from "next/script";
+import { useRouter } from "next/router";
 
-export default function FormikExample() {
+export default function FormikExample(props) {
+  const { query } = useRouter();
+
   function validateName(value) {
     let error;
     if (!value) {
@@ -41,22 +44,24 @@ export default function FormikExample() {
 
   return (
     <>
-      <Script src="https://cdn.jsdelivr.net/gh/gkogan/sup-save-url-parameters/sup.min.js" />
-
       <Formik
         initialValues={{
-          name: "",
+          // name: "",
+          campaignId: query.campaignid,
+          adgroupId: query.adgroupid,
         }}
+        enableReinitialize={true}
         onSubmit={(values, actions) => {
           setTimeout(() => {
+            console.log(values);
             fetch(`https://hooks.zapier.com/hooks/catch/3660927/bte5w7a/`, {
               method: "POST",
               body: JSON.stringify(values, null, 2),
             }),
-              3000,
-              // alert(JSON.stringify(values, null, 2))
-              // actions.setSubmitting(false),
-              (window.location.href = "https://bit.ly/3GkyZzH");
+              3000;
+            // alert(JSON.stringify(values, null, 2))
+            // // actions.setSubmitting(false),
+            window.location.href = "https://bit.ly/3GkyZzH";
             // window.open(
             //     'https://bit.ly/32BJlNx',
             //     '_blank'
@@ -131,21 +136,39 @@ export default function FormikExample() {
                 )}
               </Field>
 
-              {/* <Field name="campaignid">
-                {({ field }) => (
-                  <FormControl isReadOnly>
+              <Field name="campaignid">
+                {({ field, form }) => (
+                  <FormControl display="none">
                     <Input
                       {...field}
                       type="hidden"
-                      value=""
                       id="campaignid"
+                      value={props.values.campaignId}
+                      readOnly
                       placeholder="CampaignId"
                       variant="flushed"
                       fontSize="large"
                     />
                   </FormControl>
                 )}
-              </Field> */}
+              </Field>
+
+              <Field name="adgroupid">
+                {({ field, form }) => (
+                  <FormControl display="none">
+                    <Input
+                      {...field}
+                      type="hidden"
+                      id="adgroupid"
+                      value={props.values.adgroupId}
+                      readOnly
+                      placeholder="adgroupId"
+                      variant="flushed"
+                      fontSize="large"
+                    />
+                  </FormControl>
+                )}
+              </Field>
 
               <Button
                 id="submited"
