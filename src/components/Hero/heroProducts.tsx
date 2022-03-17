@@ -12,7 +12,7 @@ import ProductsSlider from "../Slider/sliderProducts";
 
 export default function HeroProducts() {
   return (
-    <Box as="section" w="full" bg="secondary.100" zIndex="0" pt={["40", "20"]}>
+    <Box as="section" w="full" bg="secondary.100" zIndex="0" pt={["24", "20"]}>
       <Container
         as={Flex}
         flexDir={["column", "column"]}
@@ -42,7 +42,7 @@ export default function HeroProducts() {
             display={["none", "block"]}
           >
             <Text as="h3" pb={["4", "4"]}>
-              Precisando de ajuda?{" "}
+              Precisando de ajuda?
             </Text>
             <Text>
               Experimente nosso atendimento online. Agilize seu dia e converse
@@ -60,7 +60,7 @@ export default function HeroProducts() {
         </Box>
 
         <Flex pt="14" pb={["10", "20"]} flexDir={["column", "row"]}>
-          <Text as="h1" flex="1" maxW="400px">
+          <Text as="h1" flex="1" maxW="400px" pb={["4", "0"]}>
             Persiana Rolo
           </Text>
 

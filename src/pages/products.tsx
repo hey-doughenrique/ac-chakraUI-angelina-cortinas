@@ -6,7 +6,14 @@ import {
   Text,
   UnorderedList,
 } from "@chakra-ui/react";
-import { RiCustomerService2Line, RiVipDiamondLine } from "react-icons/ri";
+import { MdOutlineCleaningServices, MdOutlineStyle } from "react-icons/md";
+import {
+  RiAttachmentLine,
+  RiCustomerService2Line,
+  RiStarLine,
+  RiSunFoggyLine,
+  RiVipDiamondLine,
+} from "react-icons/ri";
 
 import { AiOutlineFieldTime } from "react-icons/ai";
 import { BrandsGrid } from "../components/LogoGrid/brandgrid";
@@ -14,7 +21,6 @@ import { CallToActionONE } from "../components/CallToAction/cta1";
 import { Footer2 } from "../components/Footer/Footer 2";
 import { HalfSection } from "../theme/foundations/layout";
 import HeroProducts from "../components/Hero/heroProducts";
-import { MdOutlineStyle } from "react-icons/md";
 import { Menu } from "../components/Header/index";
 
 export default function Products() {
@@ -28,22 +34,23 @@ export default function Products() {
         <Box>
           <Flex flexDir={["column", "row"]}>
             <Flex py={["4", "0"]}>
-              <RiCustomerService2Line size={36} />
+              <RiAttachmentLine size={36} />
               <Box ml="4" w={["full", "320px"]}>
-                <Text as="h4">Suporte VIP</Text>
+                <Text as="h4">Flexibilidade</Text>
                 <Text>
-                  Atendimento personalizado para seu projeto que, assim como
-                  você, é único.
+                  A cortina rolô é um item muito flexível e fácil de manusear.
+                  Além disso permite acionamento digital ou motorizado pro
+                  controle remoto.
                 </Text>
               </Box>
             </Flex>
             <Flex py={["4", "0"]}>
-              <AiOutlineFieldTime size={36} />
+              <MdOutlineCleaningServices size={36} />
               <Box ml="4" w={["full", "320px"]}>
-                <Text as="h4">Agilidade</Text>
+                <Text as="h4">Fácil de Limpar</Text>
                 <Text>
-                  Melhor prazo de entrega do mercado, sem abrir mão da
-                  qualidade. Pode conferir.
+                  Por serem fabricadas em uma peça inteira, a sua higienização é
+                  fácil e prática.
                 </Text>
               </Box>
             </Flex>
@@ -51,23 +58,23 @@ export default function Products() {
 
           <Flex flexDir={["column", "row"]} pt={["0", "8"]}>
             <Flex py={["4", "0"]}>
-              <RiVipDiamondLine size={36} />
+              <RiStarLine size={36} />
               <Box ml="4" w={["full", "320px"]}>
-                <Text as="h4">Expertise</Text>
+                <Text as="h4">Alta Durabilidade</Text>
                 <Text>
-                  Nossa tradição traz a você o que há melhor em serviços e
-                  customização.
+                  Os tubos que sustentam a cortina geralmente são feitas com
+                  materiais sólidos e resistentes como plástico e metal.
                 </Text>
               </Box>
             </Flex>
 
             <Flex py={["4", "0"]}>
-              <MdOutlineStyle size={36} />
+              <RiSunFoggyLine size={36} />
               <Box ml="4" w={["full", "320px"]}>
-                <Text as="h4">Variedades</Text>
+                <Text as="h4">Proteção Solar</Text>
                 <Text>
-                  As melhores marcas, modelos e produtos do mercad a sua
-                  disposição.
+                  Ótima opção para diminuir o calor do ambiente e evitar que os
+                  raios ultravioletas entrem no cômodo.
                 </Text>
               </Box>
             </Flex>
@@ -95,7 +102,7 @@ export default function Products() {
           bg="white"
         >
           <Text as="h3" pb={["4", "4"]}>
-            Precisando de ajuda?{" "}
+            Precisando de ajuda?
           </Text>
           <Text>
             Experimente nosso atendimento online. Agilize seu dia e converse com
