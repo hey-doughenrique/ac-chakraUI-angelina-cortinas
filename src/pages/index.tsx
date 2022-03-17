@@ -85,7 +85,12 @@ export default function MyApp({ Component, pageProps }: AppProps) {
             Ajudamos você a encontrar a cortina ou persiana ideal
           </Text>
 
-          <Text color="white" maxW={["100%", "620px"]} mt="4">
+          <Text
+            color="white"
+            maxW={["100%", "620px"]}
+            mt="4"
+            fontSize={["lg", "xl"]}
+          >
             Tem algum projeto em mente? Inicie o seu atendimento online e vamos
             discutir juntos sobre a sua proposta.
           </Text>
