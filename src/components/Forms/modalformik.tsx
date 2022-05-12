@@ -5,16 +5,17 @@ import {
   Flex,
   FormControl,
   FormErrorMessage,
-  FormHelperText,
   FormLabel,
   Input,
 } from "@chakra-ui/react";
-import { Field, Form, Formik, FormikHelpers } from "formik";
+import { Field, Form, Formik } from "formik";
 
 import { BsWhatsapp } from "react-icons/bs";
-import Script from "next/script";
+import { useRouter } from "next/router";
 
 export default function ModalFormik() {
+  const { query } = useRouter();
+
   function validateName(value) {
     let error;
     if (!value) {
@@ -41,12 +42,13 @@ export default function ModalFormik() {
 
   return (
     <>
-      <Script src="https://cdn.jsdelivr.net/gh/gkogan/sup-save-url-parameters/sup.min.js" />
-
       <Formik
         initialValues={{
-          name: "",
+          // name: "",
+          campaignId: query.campaignid,
+          adgroupId: query.adgroupid,
         }}
+        enableReinitialize={true}
         onSubmit={(values, actions) => {
           setTimeout(() => {
             fetch(`https://hooks.zapier.com/hooks/catch/3660927/bte5w7a/`, {
@@ -150,6 +152,40 @@ export default function ModalFormik() {
                       fontSize="large"
                     />
                     <FormErrorMessage>{form.errors.needs}</FormErrorMessage>
+                  </FormControl>
+                )}
+              </Field>
+
+              <Field name="campaignid">
+                {({ field, form }) => (
+                  <FormControl display="none">
+                    <Input
+                      {...field}
+                      type="hidden"
+                      id="campaignid"
+                      value={props.values.campaignId}
+                      readOnly
+                      placeholder="CampaignId"
+                      variant="flushed"
+                      fontSize="large"
+                    />
+                  </FormControl>
+                )}
+              </Field>
+
+              <Field name="adgroupid">
+                {({ field, form }) => (
+                  <FormControl display="none">
+                    <Input
+                      {...field}
+                      type="hidden"
+                      id="adgroupid"
+                      value={props.values.adgroupId}
+                      readOnly
+                      placeholder="adgroupId"
+                      variant="flushed"
+                      fontSize="large"
+                    />
                   </FormControl>
                 )}
               </Field>

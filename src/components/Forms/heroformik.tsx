@@ -5,17 +5,15 @@ import {
   Flex,
   FormControl,
   FormErrorMessage,
-  FormHelperText,
   FormLabel,
   Input,
 } from "@chakra-ui/react";
-import { Field, Form, Formik, FormikHelpers } from "formik";
+import { Field, Form, Formik } from "formik";
 
 import { BsWhatsapp } from "react-icons/bs";
-import Script from "next/script";
 import { useRouter } from "next/router";
 
-export default function FormikExample(props) {
+export default function FormikExample() {
   const { query } = useRouter();
 
   function validateName(value) {
@@ -53,7 +51,6 @@ export default function FormikExample(props) {
         enableReinitialize={true}
         onSubmit={(values, actions) => {
           setTimeout(() => {
-            console.log(values);
             fetch(`https://hooks.zapier.com/hooks/catch/3660927/bte5w7a/`, {
               method: "POST",
               body: JSON.stringify(values, null, 2),
