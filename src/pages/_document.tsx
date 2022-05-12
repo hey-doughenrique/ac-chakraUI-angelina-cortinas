@@ -25,12 +25,15 @@ export default class MyDocument extends Document {
           <meta name="theme-color" content="#152B47" />
         </Head>
         <body>
-          <noscript
-            dangerouslySetInnerHTML={{
-              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7JQZHG"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></iframe>`,
-            }}
-          />
+          {/* Google Tag Manager (noscript) */}
+          <noscript>
+            <iframe
+              src="https://www.googletagmanager.com/ns.html?id=GTM-WL3TG73"
+              height="0"
+              width="0"
+            ></iframe>
+          </noscript>
+          {/* End Google Tag Manager (noscript) */}
 
           <Main />
           <NextScript />

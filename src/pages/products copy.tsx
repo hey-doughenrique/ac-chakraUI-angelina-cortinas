@@ -18,26 +18,12 @@ import {
 import { AiOutlineFieldTime } from "react-icons/ai";
 import { BrandsGrid } from "../components/LogoGrid/brandgrid";
 import { CallToActionONE } from "../components/CallToAction/cta1";
-import { Client } from "@notionhq/client";
 import { Footer2 } from "../components/Footer/Footer 2";
 import { HalfSection } from "../theme/foundations/layout";
 import HeroProducts from "../components/Hero/heroProducts";
 import { Menu } from "../components/Header/index";
 
-const notion = new Client({ auth: process.env.NOTION_KEY });
-
-export default function Products({ data }) {
-  const getTitle = () => {
-    let jsx = [];
-    data.results.forEach((page) => {
-      jsx.push(
-        <Text as="h1">{page.properties.Título.title[0].plain_text}</Text>
-      );
-    });
-    return jsx;
-  };
-
-  console.log(data);
+export default function Products() {
   return (
     <>
       <Menu />
@@ -50,7 +36,7 @@ export default function Products({ data }) {
             <Flex py={["4", "0"]}>
               <RiAttachmentLine size={36} />
               <Box ml="4" w={["full", "320px"]}>
-                <Text as="h4">{getTitle()}</Text>
+                <Text as="h4">Flexibilidade</Text>
                 <Text>
                   A cortina rolô é um item muito flexível e fácil de manusear.
                   Além disso permite acionamento digital ou motorizado pro
@@ -231,18 +217,4 @@ export default function Products({ data }) {
       <Footer2 />
     </>
   );
-}
-
-export async function getServerSideProps() {
-  const databaseId = process.env.NOTION_DATABASE_ID;
-  const response = await notion.databases.query({
-    database_id: databaseId,
-    page_size: 100,
-  });
-
-  return {
-    props: {
-      data: response,
-    },
-  };
 }
