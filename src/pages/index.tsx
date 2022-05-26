@@ -2,20 +2,20 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 
 import { AppProps } from "next/app";
 import BasicUsage from "../components/Modal";
-import { BrandsGrid } from "../components/LogoGrid/brandgrid";
+import Brands from "../components/Logos/BrandsLogo";
 import { CallToActionONE } from "../components/CallToAction/cta1";
+import ClientsLogo from "../components/Logos/ClientsLogo";
+import Expertise from "../components/Expertise";
 import { Feature } from "../components/Features/feature";
 import { Feature2 } from "../components/Features/feature2";
-import { Feature3 } from "../components/Features/feature3";
 import FloatingWhatsApp from "react-floating-whatsapp";
 import { Footer2 } from "../components/Footer/Footer 2";
 import FormikExample from "../components/Forms/heroformik";
 import Head from "next/head";
 import { HeroForm } from "../components/Forms/heroform";
-import { LogoGrid } from "../components/LogoGrid/logogrid";
 import { Menu } from "../components/Header/index";
 import Slider from "../components/Slider/slider";
-import { Testimonials } from "../components/Testimonials/testimonials";
+import Testimonials from "../components/Testimonials";
 import { WithSubnavigation } from "../components/Header";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
@@ -101,8 +101,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         </Box>
       </Flex>
 
-      <LogoGrid />
-      <Feature3 />
+      <ClientsLogo />
+      <Expertise />
       <Testimonials />
       <Flex as="section" flexDir="column">
         <Text as="h2" textAlign="center" pb={["10", "20"]}>
@@ -112,7 +112,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       </Flex>
       <Feature />
       <Feature2 />
-      <BrandsGrid />
+      <Brands />
       <CallToActionONE />
       <Footer2 />
     </>

@@ -16,7 +16,7 @@ import {
 } from "react-icons/ri";
 
 import { AiOutlineFieldTime } from "react-icons/ai";
-import { BrandsGrid } from "../components/LogoGrid/brandgrid";
+import Brands from "../components/Logos/BrandsLogo";
 import { CallToActionONE } from "../components/CallToAction/cta1";
 import { Footer2 } from "../components/Footer/Footer 2";
 import { HalfSection } from "../theme/foundations/layout";
@@ -212,7 +212,7 @@ export default function Products() {
         </Box>
       </HalfSection>
 
-      <BrandsGrid />
+      <Brands />
       <CallToActionONE />
       <Footer2 />
     </>

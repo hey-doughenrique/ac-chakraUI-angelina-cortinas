@@ -2,21 +2,29 @@ import { Box, Container, Text } from "@chakra-ui/react";
 
 import Image from "next/image";
 
-export function Feature3() {
+export default function Expertise() {
   return (
-    <Box id="sobre" background="secondary.100">
+    <Box
+      id="sobre"
+      background={[
+        "linear-gradient(4deg,#F7F6F3 46%,#ffffff 100%);",
+        "linear-gradient(360deg,#F7F6F3 46%,#ffffff 0%)",
+      ]}
+    >
       <Box>
         <Container
           display="flex"
           mx="auto"
-          py="20"
-          pb={["8", "20"]}
+          pt={["0", "16"]}
+          pb={["8", "10"]}
           flexDirection={["column", "row"]}
           maxWidth={["100vw", "1080px"]}
-          px={["8", "20"]}
+          px={["8", "4"]}
         >
-          <Text as="h2">São 51 anos de expertise compartilhados com você</Text>
-          <Text mt="4">
+          <Text as="h2" flex="1">
+            São 51 anos de expertise compartilhados com você
+          </Text>
+          <Text mt={["4", "0"]} flex="1">
             Em 1960 ajudamos a criar a indústria têxtil no ramo da decoração no
             Brasil. Em 1970 fundamos a Angelina Cortinas e passamos a atuar como
             uma Grife de Cortinas.

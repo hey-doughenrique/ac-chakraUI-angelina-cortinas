@@ -1,6 +1,6 @@
 import { Box, Flex, Image, Stack, Text } from "@chakra-ui/react";
 
-export function BrandsGrid() {
+export default function BrandsLogo() {
   return (
     <Flex
       justify="center"
